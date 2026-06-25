@@ -1,0 +1,1241 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <!-- Splide CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <nav class="bg-dark border-b border-dark2">
+    <div class="mx-auto">
+      <div class="flex items-center justify-between h-12">
+        <div class="flex items-center sm:gap-4 gap-3">
+          <!-- Desktop Sidebar Button -->
+          <button id="desktop-sidebar" aria-label="Toggle menu"
+            class="demo-trigger hidden lg:block xl:px-19 md:px-6 py-5 bg-dark2 hover:bg-dark cursor-pointer transition-colors"
+            aria-label="Toggle menu">
+            <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="42" height="2" fill="white" />
+              <rect y="6" width="42" height="2" fill="white" />
+            </svg>
+          </button>
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-toggle" class="lg:hidden text-white hover:text-teal p-2 transition-colors"
+            aria-label="Toggle mobile menu">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="12" width="32" height="2" fill="white" />
+              <rect y="18" width="32" height="2" fill="white" />
+            </svg>
+          </button>
+          <a href="index.html" class="flex items-center">
+            <!-- replace with your logo img -->
+            <img src="assets/images/pixxen-logo.png" alt="Pixxen" class="img-fluid sm:w-auto w-34" />
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-8">
+          <!-- ====== SERVICES DROPDOWN ====== -->
+          <div class="desktop-dropdown">
+            <a href="#services"
+              class="text-white hover:text-light-green transition-colors text-base font-medium desktop-dropdown-toggle">
+              SERVICES <span class="desktop-dropdown-icon ml-1">+</span>
+            </a>
+
+            <!-- Mega panel: list LEFT + grid RIGHT -->
+            <div class="desktop-dropdown-menu">
+              <!-- LEFT: service items -->
+              <ul class="dropdown-service-list">
+                <li>
+                  <a href="mobile-app-design.html">
+                    <span class="service-icon">
+                      <!-- Mobile icon -->
+                      <img src="assets/images/dropdownicon1.svg" class="img-fluid" alt="dropdown-icon" />
+                    </span>
+                    MOBILE APP DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="dashboard-design.html">
+                    <span class="service-icon">
+                      <!-- Dashboard/pie icon -->
+                      <img src="assets/images/dropdownicon2.svg" class="img-fluid" alt="dropdown-icon" />
+                    </span>
+                    DASHBOARD DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="website-design.html">
+                    <span class="service-icon">
+                      <!-- Monitor icon -->
+                      <img src="assets/images/dropdownicon3.svg" class="img-fluid" alt="dropdown-icon" />
+                    </span>
+                    WEBSITE DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="web-application-design.html">
+                    <span class="service-icon">
+                      <!-- Laptop icon -->
+                      <img src="assets/images/dropdownicon4.svg" class="img-fluid" alt="dropdown-icon" />
+                    </span>
+                    WEB APP DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="saas-design.html">
+                    <span class="service-icon">
+                      <!-- Desktop/screen icon -->
+                      <img src="assets/images/dropdownicon5.svg" class="img-fluid" alt="dropdown-icon" />
+                    </span>
+                    SAAS DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="branding-design.html">
+                    <span class="service-icon">
+                      <!-- Brand/star icon -->
+                      <img src="assets/images/dropdownicon6.svg" class="img-fluid" alt="dropdown-icon" />
+                    </span>
+                    BRANDING
+                  </a>
+                </li>
+              </ul>
+
+              <!-- right: items -->
+              <div class="flex items-end">
+                <img src="assets/images/dropdown-shape.svg" alt="" />
+              </div>
+            </div>
+            <!-- end .desktop-dropdown-menu -->
+          </div>
+          <!-- ====== end SERVICES ====== -->
+
+          <a href="case-study.html"
+            class="text-white hover:text-light-green transition-colors text-base font-medium">CASE
+            STUDIES</a>
+          <a href="about.html"
+            class="text-white hover:text-light-green transition-colors text-base font-medium">ABOUT</a>
+          <a href="blog.html" class="text-white hover:text-light-green transition-colors text-base font-medium">BLOG</a>
+          <a href="contact.html"
+            class="text-white hover:text-light-green transition-colors text-base font-medium">Contact</a>
+        </div>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden lg:flex items-center">
+          <a href="contact.html"
+            class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block xl:px-12 md:px-5 py-3 text-white border border-dark2 transition-all font-medium">
+            <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+              <span class="t-up text-base font-medium text-white uppercase">OUR Contact</span>
+              <span class="t-down text-base font-medium text-white uppercase">OUR Contact</span>
+            </div>
+          </a>
+          <a href="contact.html"
+            class="xl:px-12 md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-light-green text-dark transition-colors font-bold">
+            <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+              <span class="t-up text-base font-medium text-dark uppercase">Let’s Connect</span>
+              <span class="t-down text-base font-medium text-dark uppercase">Let’s Connect</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Mobile LET'S CONNECT -->
+        <a href="contact.html"
+          class="lg:hidden px-4 sm:px-5 mobile-letconnect mega-reveal-btn relative overflow-hidden cursor-pointer py-4 sm:py-4 bg-white text-black transition-colors font-bold">
+          <div class="text-mask sm:h-5 h-4 overflow-hidden flex flex-col">
+            <span class="t-up text-sm font-medium text-black uppercase">OUR Let’s Connect</span>
+            <span class="t-down text-sm font-medium text-black uppercase">OUR Let’s Connect</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- ====================== MOBILE MENU (2-panel) ====================== -->
+    <!-- Dark overlay -->
+    <div id="mobile-overlay" class="mobile-overlay"></div>
+
+    <!-- Wrapper holds both panels -->
+    <div id="mobile-menu-wrapper" class="mobile-menu-wrapper">
+      <!-- PANEL 1: Main Menu -->
+      <div id="mm-main" class="mm-panel mm-main">
+        <div class="mm-main-header">
+          <span class="mm-title">Menu</span>
+          <button id="mm-close" class="mm-close-btn" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                fill="white" />
+            </svg>
+          </button>
+        </div>
+
+        <ul class="mm-nav-list">
+          <li>
+            <!-- SERVICES: opens panel 2 -->
+            <button id="mm-services-trigger" class="mm-nav-link w-full text-left"
+              style="background: none; border: none; cursor: pointer">
+              SERVICES
+              <span class="mm-plus">+</span>
+            </button>
+          </li>
+          <li>
+            <a href="case-study.html" class="mm-nav-link">case studies</a>
+          </li>
+          <li><a href="about.html" class="mm-nav-link">about</a></li>
+          <li><a href="blog.html" class="mm-nav-link">blog</a></li>
+          <li><a href="contact.html" class="mm-nav-link">contact</a></li>
+          <li><a href="team.html" class="mm-nav-link">team</a></li>
+          <li>
+            <div class="flex justify-start mt-8 mx-4">
+              <a href="contact.html"
+                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-white transition-all duration-200">
+                <div class="btn-inner relative z-2 flex items-center gap-3">
+                  <div
+                    class="icon-circle h-6 w-6 rounded-full bg-black flex items-center justify-center overflow-hidden">
+                    <div class="icon-slider flex flex-row">
+                      <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                        <path
+                          d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                          fill="var(--color-white)" />
+                      </svg>
+                      <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                        <path
+                          d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                          fill="var(--color-white)" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                    <span class="t-up md:text-[20px] text-base font-medium text-black uppercase">Let’s Connect</span>
+                    <span class="t-down md:text-[20px] text-base font-medium text-black uppercase">Let’s Connect</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- LET'S CONNECT -->
+        <div>
+          <div>
+            <div class="w-full flex justify-end">
+              <img src="assets/images/menu-mobile-shape.svg" class="img-fluid sm:w-auto w-[190px]" alt="mobile menu" />
+            </div>
+            <img src="assets/images/mobile-bottom-logo.svg" class="img-fluid w-full" alt="mobile menu" />
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 2: Services -->
+      <div id="mm-services" class="mm-panel mm-services">
+        <div class="mm-services-header">
+          <button id="mm-back" class="mm-back-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            BACK
+          </button>
+          <button id="mm-services-close" class="mm-close-btn" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                fill="white" />
+            </svg>
+          </button>
+        </div>
+
+        <div>
+          <div class="mm-services-title">Services</div>
+
+          <!-- 2×3 grid -->
+          <div class="mm-services-grid">
+            <!-- Mobile App Design -->
+            <a href="mobile-app-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon1.svg" class="img-fluid" alt="dropdown-icon" />
+              </span>
+              <span class="card-label">MOBILE APP DESIGN</span>
+            </a>
+            <!-- Dashboard Design -->
+            <a href="dashboard-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon2.svg" class="img-fluid" alt="dropdown-icon" />
+              </span>
+              <span class="card-label">DASHBOARD DESIGN</span>
+            </a>
+            <!-- Website Design -->
+            <a href="website-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon3.svg" class="img-fluid" alt="dropdown-icon" />
+              </span>
+              <span class="card-label">WEBSITE DESIGN</span>
+            </a>
+            <!-- Web App Design -->
+            <a href="web-application-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon4.svg" class="img-fluid" alt="dropdown-icon" />
+              </span>
+              <span class="card-label">WEB APP DESIGN</span>
+            </a>
+            <!-- SaaS Design -->
+            <a href="saas-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon5.svg" class="img-fluid" alt="dropdown-icon" />
+              </span>
+              <span class="card-label">SAAS DESIGN</span>
+            </a>
+            <!-- Branding -->
+            <a href="branding-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon6.svg" class="img-fluid" alt="dropdown-icon" />
+              </span>
+              <span class="card-label">BRANDING</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- decorative bottom grid -->
+        <div>
+          <div>
+            <div class="w-full flex justify-end">
+              <img src="assets/images/menu-mobile-shape.svg" class="img-fluid sm:w-auto w-47.5" alt="mobile menu" />
+            </div>
+            <img src="assets/images/mobile-bottom-logo.svg" class="img-fluid w-full" alt="mobile menu" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end mobile-menu-wrapper -->
+  </nav>
+
+  <!-- Full page menu -->
+  <div id="pixxen-menu" role="dialog" aria-modal="true" aria-label="Main navigation">
+    <!-- TOP PANEL: slides in from top -->
+    <div class="menu-top" id="menu-top">
+      <!-- Grid decoration top-left -->
+      <div class="deco-cross" style="top: 0px; left: 0px">
+        <img src="assets/images/large-menu-top.svg" class="img-fluid" alt="" />
+      </div>
+
+      <!-- Grid decoration top-right area -->
+      <div class="deco-cross" style="bottom: 0px; right: 0px">
+        <img src="assets/images/large-menu-bottom.svg" class="img-fluid" alt="" />
+      </div>
+
+      <!-- LET'S CONNECT -->
+
+      <a href="contact.html"
+        class="xl:px-12 connect-btn md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-light-green text-black transition-colors font-bold">
+        <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+          <span class="t-up text-base font-medium text-black uppercase">Let’s Connect</span>
+          <span class="t-down text-base font-medium text-black uppercase">Let’s Connect</span>
+        </div>
+      </a>
+
+      <!-- CLOSE BUTTON -->
+      <div class="close-wrap">
+        <button class="close-btn" id="menu-close" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- NAV LINKS -->
+      <nav class="nav-columns" id="nav-columns">
+        <div class="nav-col" id="col-services">
+          <div class="nav-col-title">Services</div>
+          <ul>
+            <li><a href="mobile-app-design.html">Mobile App Design</a></li>
+            <li><a href="dashboard-design.html">Dashboard Design</a></li>
+            <li><a href="website-design.html">Website Design</a></li>
+            <li><a href="web-application-design.html">Web App Design</a></li>
+            <li><a href="saas-design.html">SaaS Design</a></li>
+            <li><a href="branding-design.html">Branding</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col" id="col-pixxen">
+          <div class="nav-col-title">Pixxen</div>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="case-study.html">Case Studies</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col" id="col-resources">
+          <div class="nav-col-title">Resources</div>
+          <ul>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col" id="col-legal">
+          <div class="nav-col-title">Legal</div>
+          <ul>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- /menu-top -->
+
+    <!-- BOTTOM PANEL: slides in from bottom (logo bar) -->
+    <div class="menu-bottom" id="menu-bottom">
+      <!-- LOGO -->
+      <div class="bottom-logo" id="bottom-logo">
+        <img src="assets/images/pixxen-footerlogo.png" class="img-fluid" alt="largemenu" />
+      </div>
+    </div>
+    <!-- /menu-bottom -->
+  </div>
+  <!-- Full page menu -->
+
+
+
+  <!-- Banner section -->
+  <section class="relative md:min-h-screen flex items-center justify-center bg-black text-white py-16 overflow-hidden ">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/images/Fitness-hero-banner.png" alt="People doing planks in a fitness studio"
+        class="w-full h-full object-cover object-center" />
+      <!-- dark overlay -->
+      <div class="absolute inset-0 bg-black/24"></div>
+    </div>
+
+    <div class="container relative z-10 ">
+      <div class="max-w-248 mx-auto text-center flex flex-col items-center justify-center pt-10">
+
+        <h3
+          class="font-Bartle text-light-green text-base sm:text-lg md:text-2xl lg:text-[32px] font-normal leading-[100%] uppercase mb-4 md:mb-8">
+          Website<br> Design For
+        </h3>
+
+        <h1
+          class="font-Bartle text-white text-[28px] sm:text-[32px] md:text-[40px] lg:text-[60px] xl:text-[90px] font-normal leading-[100%] uppercase mb-4 md:mb-8">
+          Fitness <br> Studio
+        </h1>
+
+        <div class="flex items-center justify-center gap-2 sm:gap-3 mb-6 sm:mb-8">
+
+          <!-- left side power up svg -->
+          <svg id="powerLeft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 54"
+            class="w-22.5 sm:w-30 md:w-42 h-auto" fill="none">
+            <path d="M150 0H168L158 54H140L150 0Z" fill="#B2FF00" />
+            <path d="M122 0H140L130 54H112L122 0Z" fill="#B2FF00" />
+            <path d="M94 0H112L102 54H84L94 0Z" fill="#B2FF00" />
+            <path d="M66 0H84L74 54H56L66 0Z" fill="#B2FF00" />
+            <path d="M38 0H56L46 54H28L38 0Z" fill="#B2FF00" />
+            <path d="M10 0H28L18 54H0L10 0Z" fill="#B2FF00" />
+          </svg>
+
+          <!-- price -->
+          <div id="priceTag" class="text-center font-Bartle text-light-green uppercase leading-none
+           text-[18px] sm:text-[24px] md:text-[32px]">
+            <span class="block">Only</span>
+            <span>$999</span>
+          </div>
+
+          <!-- right side power up svg -->
+          <svg id="powerRight" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 54"
+            class="w-[90px] sm:w-[120px] md:w-[168px] h-auto" fill="none">
+            <path d="M150 0H168L158 54H140L150 0Z" fill="#B2FF00" />
+            <path d="M122 0H140L130 54H112L122 0Z" fill="#B2FF00" />
+            <path d="M94 0H112L102 54H84L94 0Z" fill="#B2FF00" />
+            <path d="M66 0H84L74 54H56L66 0Z" fill="#B2FF00" />
+            <path d="M38 0H56L46 54H28L38 0Z" fill="#B2FF00" />
+            <path d="M10 0H28L18 54H0L10 0Z" fill="#B2FF00" />
+          </svg>
+
+        </div>
+        <!-- common btn -->
+        <div class="w-full flex justify-center font-anton">
+          <a href="contact.html"
+            class="inline-flex items-center justify-center px-8 py-3 sm:px-12 sm:py-5 mega-reveal-btn relative overflow-hidden bg-light-green font-normal leading-[100%] transition-colors uppercase [clip-path:polygon(8%_0%,100%_0%,93%_100%,0%_100%)]">
+            <div class="text-mask h-6 sm:h-7 overflow-hidden flex flex-col">
+              <span class="t-up text-base sm:text-xl md:text-2xl font-normal text-black">
+                Book a free 15-min call
+              </span>
+              <span class="t-down text-base sm:text-xl md:text-2xl font-normal text-black">
+                Book a free 15-min call
+              </span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- Banner section -->
+  <!-- Counter section -->
+  <section class=" bg-black section-padding">
+    <div class="container">
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6 md:gap-x-8 text-left">
+
+        <!-- Counter 1 -->
+        <div class="flex flex-col items-center text-center lg:items-start lg:text-left justify-start">
+          <span class="font-Bartle text-light-green text-lg sm:text-xl md:text-[32px] font-normal leading-[100%] mb-2">
+            <span class="fitness-counter" data-target="999">0</span>
+          </span>
+          <p
+            class="text-white font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[100%] md:leading-[130%]">
+            Fixed price
+          </p>
+        </div>
+
+        <!-- Counter 2 -->
+        <div class="flex flex-col items-center text-center lg:items-start lg:text-left justify-start">
+          <span class="font-Bartle text-light-green text-lg sm:text-xl md:text-[32px] font-normal leading-[100%] mb-2">
+            <span class="fitness-counter" data-target="14">0</span>
+          </span>
+          <p
+            class="text-white font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[100%] md:leading-[130%]">
+            Days to launch
+          </p>
+        </div>
+
+        <!-- Counter 3 -->
+        <div class="flex flex-col items-center text-center lg:items-start lg:text-left justify-start">
+          <span class="font-Bartle text-light-green text-lg sm:text-xl md:text-[32px] font-normal leading-[100%] mb-2">
+            <span class="fitness-counter" data-target="50" data-suffix="+">0</span>
+          </span>
+          <p
+            class="text-white font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[100%] md:leading-[130%]">
+            Fitness sites built to launch
+          </p>
+        </div>
+
+        <!-- Counter 4 -->
+        <div class="flex flex-col items-center text-center lg:items-start lg:text-left justify-start">
+          <span class="font-Bartle text-light-green text-lg sm:text-xl md:text-[32px] font-normal leading-[100%] mb-2">
+            <span class="fitness-counter" data-target="200" data-suffix="+">0</span>
+          </span>
+          <p
+            class="text-white font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[100%] md:leading-[130%]">
+            Monthly retainer
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Counter section -->
+
+  <!-- service section start (Reference image: image_24bffd.png) -->
+  <section
+    class="fitness-service bg-black section-padding overflow-hidden  selection:bg-light-green selection:text-black">
+    <div class="container font-Bartle">
+
+      <!-- Section Title -->
+      <h2 class="text-center text-white text-2xl sm:text-3xl  md:text-[48px] font-normal leading-[100%]">
+        The Real <span class="text-light-green">Problems</span>
+      </h2>
+
+      <!-- List -->
+      <ul class="my-5 md:my-16">
+
+        <!-- 01 · No intro offer above the fold -->
+        <li
+          class="svc-row relative overflow-hidden cursor-pointer border-b border-t border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service1.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-10 md:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">1</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              No intro offer above the fold
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              The intro offer is the #1 conversion driver for fitness. Studios that hide it behind 'Memberships' lose
+              60–70% of qualified intro traffic to studios that put it in the hero.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              The intro offer is the #1 conversion driver for fitness. Studios that hide it behind 'Memberships' lose
+              60–70% of qualified intro traffic to studios that put it in the hero.
+            </span>
+          </div>
+        </li>
+        <!-- 02 · Class schedule trapped in a Mindbody iframe -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service2.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-10 md:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">2</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Class schedule trapped in a Mindbody iframe
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              The intro offer is the #1 conversion driver for fitness. Studios that hide it behind 'Memberships' lose
+              60–70% of qualified intro traffic to studios that put it in the hero.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Mindbody, ClassPass, and Zen Planner embeds are slow, ugly, and dilute branding. The schedule should feel
+              like your site, not an iframe ad for the platform you pay $159/month to use.
+            </span>
+          </div>
+        </li>
+        <!-- 03 · Membership pricing hidden behind 'Contact us' -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service3.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-10 md:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">3</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Membership pricing hidden behind 'Contact us'
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Prospects in 2026 don't 'call for pricing.' They Google your competitor whose membership tiers are
+              published, then book a free trial there instead.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Mindbody, ClassPass, and Zen Planner embeds are slow, ugly, and dilute branding. The schedule should feel
+              like your site, not an iframe ad for the platform you pay $159/month to use.
+            </span>
+          </div>
+        </li>
+        <!-- 04 · No facility tour, no instructor faces, no vibe -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service4.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-10 md:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">4</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              No facility tour, no instructor faces, no vibe
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Fitness is a high-trust transaction — strangers in your sweaty, vulnerable, half-dressed presence. Without
+              a facility tour video and instructor headshots, prospects pick the studio they can actually see first.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Mindbody, ClassPass, and Zen Planner embeds are slow, ugly, and dilute branding. The schedule should feel
+              like your site, not an iframe ad for the platform you pay $159/month to use.
+            </span>
+          </div>
+        </li>
+        <!-- 05 · Class descriptions written like a TV listing -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service5.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-10 md:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">5</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Class descriptions written like a TV listing
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Fitness is a high-trust transaction — strangers in your sweaty, vulnerable, half-dressed presence. Without
+              a facility tour video and instructor headshots, prospects pick the studio they can actually see first.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              'A challenging full-body workout combining cardio and strength' tells a prospect nothing. Real
+              descriptions name the format, the music, the typical class size, what to wear, and who it's for.
+            </span>
+          </div>
+        </li>
+        <!-- 06 · Generic 'About' page where instructor profiles should live -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service1.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-10 md:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">6</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Generic 'About' page where instructor profiles should live
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Fitness is a high-trust transaction — strangers in your sweaty, vulnerable, half-dressed presence. Without
+              a facility tour video and instructor headshots, prospects pick the studio they can actually see first.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Boutique fitness is sold on instructor personality. Per-instructor profile pages with specialties,
+              certifications, and a real bio increase class bookings of that instructor by 200–400%.
+            </span>
+          </div>
+        </li>
+        <!-- 07 · Not ranking for 'yoga near me' or 'CrossFit [neighborhood]' -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service2.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-10 md:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">7</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Not ranking for 'yoga near me' or 'CrossFit [neighborhood]'
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Mindbody's free site ranks for nothing local because every studio shares the same shallow template. Proper
+              local SEO with neighborhood-targeted pages dominates over the platform's generic listings.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Mindbody's free site ranks for nothing local because every studio shares the same shallow template. Proper
+              local SEO with neighborhood-targeted pages dominates over the platform's generic listings.
+            </span>
+          </div>
+        </li>
+        <!-- 08 · Class booking flow is 7 taps on mobile -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service3.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-10 md:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">8</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Class booking flow is 7 taps on mobile
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Average fitness traffic is 75%+ mobile. If booking takes more than 3 taps, you've lost half of the people
+              who actually wanted to come.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Average fitness traffic is 75%+ mobile. If booking takes more than 3 taps, you've lost half of the people
+              who actually wanted to come.
+            </span>
+          </div>
+        </li>
+        <!-- 10 · Member testimonials buried on a separate page -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service3.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-10 md:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">10</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Member testimonials buried on a separate page
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Transformation stories with real photos belong on the homepage, the intro offer page, and every membership
+              tier page — not hidden under a 'Success Stories' tab nobody clicks.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Transformation stories with real photos belong on the homepage, the intro offer page, and every membership
+              tier page — not hidden under a 'Success Stories' tab nobody clicks.
+            </span>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- Bottom Caption Footer -->
+      <div
+        class="text-center text-white font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[100%] md:leading-[130%] max-w-248 mx-auto">
+        Transformation stories with real photos belong on the homepage, the intro offer page, and every membership tier
+        page — not hidden under a 'Success Stories' tab nobody clicks.
+      </div>
+
+    </div>
+  </section>
+  <!-- service section end -->
+
+
+  <!-- Price plan section -->
+  <section class="section-padding relative overflow-hidden">
+
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/images/fitness-priceplan-bg.png" alt="People doing planks in a fitness studio"
+        class="w-full h-full object-cover object-center" />
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/10"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="container relative z-10">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+
+        <!-- Left Content -->
+        <div class="w-full max-w-184 flex flex-col items-center text-center md:text-start md:items-start space-y-6">
+          <h2 class="font-Bartle text-2xl sm:text-3xl md:text-[48px] font-normal leading-[100%] uppercase text-white">
+            Everything
+            <span class="text-light-green">Included</span>
+          </h2>
+
+          <p
+            class="text-white font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] max-w-100">
+            Six separate services from six providers, or one package, one team,
+            one fixed price. Every deliverable built specifically for how fitness
+            prospects research and decide.
+          </p>
+
+          <!-- Button -->
+          <div class="w-full flex justify-center md:justify-start font-anton">
+            <a href="contact.html"
+              class="inline-flex items-center justify-center px-8 py-3 sm:px-12 sm:py-5 mega-reveal-btn relative overflow-hidden bg-light-green font-normal leading-[100%] transition-colors uppercase [clip-path:polygon(8%_0%,100%_0%,93%_100%,0%_100%)]">
+              <div class="text-mask h-6 sm:h-7 overflow-hidden flex flex-col">
+                <span class="t-up text-base sm:text-xl md:text-2xl font-normal text-black">
+                  Book a free 15-min call
+                </span>
+                <span class="t-down text-base sm:text-xl md:text-2xl font-normal text-black">
+                  Book a free 15-min call
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+<!-- Pricing Card -->
+<div class="w-full max-w-full md:max-w-184">
+  <div class="bg-black/85 p-5 md:p-12 backdrop-blur-md shadow-2xl">
+    <div class="space-y-3 md:space-y-4">
+
+      <div
+        class="flex justify-between items-center border-b border-[#333] pb-2 md:pb-3 font-bogle text-sm md:text-2xl font-normal leading-[100%] gap-3">
+        <span class="text-[#A7A7A7] uppercase">
+          Logo + Brand Identity
+        </span>
+        <span class="text-[#A7A7A7] uppercase shrink-0">$400+</span>
+      </div>
+
+      <div
+        class="flex justify-between items-start border-b border-[#333] pb-2 md:pb-3 font-bogle text-sm md:text-2xl font-normal leading-[100%] gap-3">
+        <span class="text-[#A7A7A7] uppercase">
+          Custom 7-Page Fitness Studio Website
+        </span>
+        <span class="text-[#A7A7A7] uppercase shrink-0">$1,800+</span>
+      </div>
+
+      <div
+        class="flex justify-between items-start border-b border-[#333] pb-2 md:pb-3 font-bogle text-sm md:text-2xl font-normal leading-[100%] gap-3">
+        <span class="text-[#A7A7A7] uppercase">
+          SEO Content With Real Keyword Research
+        </span>
+        <span class="text-[#A7A7A7] uppercase shrink-0">$800+</span>
+      </div>
+
+      <div
+        class="flex justify-between items-center border-b border-[#333] pb-2 md:pb-3 font-bogle text-sm md:text-2xl font-normal leading-[100%] gap-3">
+        <span class="text-[#A7A7A7] uppercase">
+          Technical On-Page SEO Setup
+        </span>
+        <span class="text-[#A7A7A7] uppercase shrink-0">$500+</span>
+      </div>
+
+      <div
+        class="flex justify-between items-start border-b border-[#333] pb-2 md:pb-3 font-bogle text-sm md:text-2xl font-normal leading-[100%] gap-3">
+        <span class="text-[#A7A7A7] uppercase">
+          Google Business Profile Optimization
+        </span>
+        <span class="text-[#A7A7A7] uppercase shrink-0">$400+</span>
+      </div>
+
+      <div
+        class="flex justify-between items-center border-b border-[#333] pb-2 md:pb-3 font-bogle text-sm md:text-2xl font-normal leading-[100%] gap-3">
+        <span class="text-[#A7A7A7] uppercase">
+          30 Days Post-Launch Support
+        </span>
+        <span class="text-[#A7A7A7] uppercase shrink-0">$300+</span>
+      </div>
+
+      <!-- Total -->
+      <div class="flex justify-between items-center pt-2 font-bogle text-base md:text-2xl font-normal leading-[100%]">
+        <span class="text-white uppercase">Total</span>
+        <span class="text-white uppercase">$4,200</span>
+      </div>
+
+      <!-- Divider -->
+      <div class="h-px bg-light-green my-3 md:my-4"></div>
+
+      <!-- Package Price -->
+      <div class="flex justify-between items-center pt-2 font-bogle text-base md:text-2xl font-normal leading-[100%]">
+        <span class="text-light-green uppercase">
+          Pixxen Fitness Pack
+        </span>
+        <span class="text-light-green uppercase">
+          $999
+        </span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- Price plan section -->
+
+
+  <!-- Big image section -->
+  <section class="w-full">
+    <img src="/assets/images/fitness-women-pullups.png" alt="Fitness women pullups" class="w-full h-auto block" />
+  </section>
+  <!-- Big image section -->
+
+  <!-- cta section start -->
+  <section class="cta-section relative section-padding bg-dark overflow-hidden font-bogle common-paragraph">
+    <img src="assets/images/shape-top.png"
+      class="img-fluid absolute top-0 left-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+      alt="" />
+    <img src="assets/images/shape-right.png"
+      class="img-fluid absolute bottom-0 right-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+      alt="" />
+
+    <div class="container">
+      <div class="cta-wrap z-80 relative">
+        <div class="max-w-238.5 mx-auto w-full">
+          <h2
+            class="text-center text-white font-Bartle text-lg sm:text-xl md:text-2xl lg:text-[40px] font-normal leading-[110%] md:leading-[120%] mb-4 md:mb-6">
+            Fill your intro offer & class schedule
+          </h2>
+          <p
+            class="text-[#A7A7A7] font-stacksans font-normal text-sm sm:text-base md:text-lg leading-[120%] md:leading-[130%] text-center mb-4 md:mb-8">
+            Book a free 15-minute call. We'll review your current site, audit your top three competitors who outrank
+            you, name the three biggest leaks costing you intro-offer claims right now, and tell you honestly whether
+            the Pixxen Fitness Pack fits — or whether you need something bigger.
+          </p>
+
+          <!-- Button -->
+          <div class="w-full flex justify-center font-anton">
+            <a href="contact.html"
+              class="inline-flex items-center justify-center px-8 py-3 sm:px-12 sm:py-5 mega-reveal-btn relative overflow-hidden bg-light-green font-normal leading-[100%] transition-colors uppercase [clip-path:polygon(8%_0%,100%_0%,93%_100%,0%_100%)]">
+              <div class="text-mask h-6 sm:h-7 overflow-hidden flex flex-col">
+                <span class="t-up text-base sm:text-xl md:text-2xl font-normal text-black">
+                  Book a free 15-min call
+                </span>
+                <span class="t-down text-base sm:text-xl md:text-2xl font-normal text-black">
+                  Book a free 15-min call
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- cta section end -->
+
+  <!-- footer section start -->
+  <footer class="relative">
+    <div class="bg-dark text-white border-t border-b border-dark2">
+      <div class="container">
+        <!-- Desktop Grid Layout -->
+        <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
+          <div
+            class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-dark2">
+            <div class="grid md:grid-cols-4 grid-cols-2 xl:gap-8 gap-4">
+              <!-- Services Column -->
+              <div class="">
+                <h3 class="text-white text-base sm:text-lg font-semibold mb-3 lg:mb-6">
+                  Services
+                </h3>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li>
+                    <a href="mobile-app-design.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">MOBILE
+                      APP DESIGN</a>
+                  </li>
+                  <li>
+                    <a href="dashboard-design.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">DASHBOARD
+                      DESIGN</a>
+                  </li>
+                  <li>
+                    <a href="website-design.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">WEBSITE
+                      DESIGN</a>
+                  </li>
+                  <li>
+                    <a href="web-application-design.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">WEB
+                      APP
+                      DESIGN</a>
+                  </li>
+                  <li>
+                    <a href="saas-design.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">SAAS
+                      DESIGN</a>
+                  </li>
+                  <li>
+                    <a href="branding-design.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">BRANDING</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Pixxen Column -->
+              <div class="">
+                <h3 class="text-white text-base sm:text-lg font-semibold mb-3 lg:mb-6">
+                  Pixxen
+                </h3>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li>
+                    <a href="about.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">ABOUT</a>
+                  </li>
+                  <li>
+                    <a href="contact.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">CONTACT</a>
+                  </li>
+                  <li>
+                    <a href="career.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">CAREER</a>
+                  </li>
+                  <li>
+                    <a href="team.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">TEAM</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Resources Column -->
+              <div class="">
+                <h3 class="text-white text-base sm:text-lg font-semibold mb-3 lg:mb-6">
+                  Resources
+                </h3>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li>
+                    <a href="case-study.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">CASE
+                      STUDIES</a>
+                  </li>
+                  <li>
+                    <a href="blog.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">BLOGS</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Legal Column -->
+              <div class="">
+                <h3 class="text-white text-base sm:text-lg font-semibold mb-3 lg:mb-6">
+                  Legal
+                </h3>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li>
+                    <a href="terms.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">TERMS</a>
+                  </li>
+                  <li>
+                    <a href="privacy.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">PRIVACY</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Copyright -->
+            <div class="mt-8 lg:mt-0 pt-6 lg:pt-0 border-t border-dark2 lg:border-0 md:block hidden">
+              <p class="text-white text-sm text-center lg:text-left">
+                © 2026 PIXXEN
+              </p>
+            </div>
+          </div>
+
+          <!-- Newsletter Column -->
+          <div
+            class="md:pl-10 lg:pl-14 md:border-l border-dark2 lg:col-span-4 md:col-span-5 md:py-12 sm:py-8 py-6 flex flex-col justify-between gap-5">
+            <div>
+              <h3 class="text-white md:text-lg text-base font-semibold md:mb-3 mb-2 lg:mb-4">
+                Join 5,000+ design lovers.
+              </h3>
+              <p class="text-white sm:text-sm text-[12px] mb-4 lg:mb-6">
+                Monthly design insights, case studies, and inspiration
+                straight to your inbox.
+              </p>
+
+              <!-- Email Input -->
+              <div class="relative mb-3 md:mb-8 lg:mb-12">
+                <input type="email" placeholder="Email address"
+                  class="w-full bg-transparent border border-dark2 rounded-2xl px-4 py-5 lg:py-3.5 h-16 text-white placeholder:text-white focus:outline-none focus:border-soft-green transition-colors text-sm lg:text-base pr-14" />
+                <button
+                  class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-dark2 hover:bg-light-green p-3.75 rounded-r-2xl transition-colors">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.5628 14.6665L14.4108 7.51452L16.2964 5.62891L26.6673 15.9999L16.2964 26.3707L14.4108 24.4851L21.5628 17.3332H5.33398V14.6665H21.5628Z"
+                      fill="#fff" class="group-hover:fill-white transition-colors" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex md:justify-start justify-center md:gap-2 gap-1 lg:gap-2">
+              <a href="#"
+                class="bg-dark2 hover:bg-light-green p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"
+                    fill="white" />
+                </svg>
+              </a>
+              <a href="#"
+                class="bg-dark2 hover:bg-light-green p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.5 11C8.60457 11 9.5 10.1046 9.5 9C9.5 7.89543 8.60457 7 7.5 7H3V11H7.5ZM8.5 13H3V17H8.5C9.60457 17 10.5 16.1046 10.5 15C10.5 13.8954 9.60457 13 8.5 13ZM10.5632 11.5725C11.7239 12.2726 12.5 13.5457 12.5 15C12.5 17.2091 10.7091 19 8.5 19H1V5H7.5C9.70914 5 11.5 6.79086 11.5 9C11.5 9.97964 11.1478 10.877 10.5632 11.5725ZM15.5 6H21V7.5H15.5V6ZM23 14.5H15.5V14.75C15.5 16.2688 16.7312 17.5 18.25 17.5C19.3187 17.5 20.245 16.8904 20.7001 16H22.8338C22.2851 18.0169 20.4407 19.5 18.25 19.5C15.6266 19.5 13.5 17.3734 13.5 14.75V13.25C13.5 10.6266 15.6266 8.5 18.25 8.5C20.8734 8.5 23 10.6266 23 13.25V14.5ZM20.8965 12.5C20.57 11.3457 19.5088 10.5 18.25 10.5C16.9912 10.5 15.93 11.3457 15.6035 12.5H20.8965Z"
+                    fill="white" />
+                </svg>
+              </a>
+              <a href="#"
+                class="bg-dark2 hover:bg-light-green p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z"
+                    fill="white" />
+                </svg>
+              </a>
+              <a href="#"
+                class="bg-dark2 hover:bg-light-green p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 9.55005C12.9171 8.61327 14.1111 8 15.5 8C18.5375 8 21 10.4624 21 13.5V21H19V13.5C19 11.567 17.433 10 15.5 10C13.567 10 12 11.567 12 13.5V21H10V8.5H12V9.55005ZM5 6.5C4.17157 6.5 3.5 5.82843 3.5 5C3.5 4.17157 4.17157 3.5 5 3.5C5.82842 3.5 6.5 4.17157 6.5 5C6.5 5.82843 5.82842 6.5 5 6.5ZM4 8.5H6V21H4V8.5Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+            <!-- Copyright -->
+            <div class="mt-1 flex justify-center md:hidden">
+              <p class="text-white text-sm text-center lg:text-left">
+                © 2026 PIXXEN
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-linear-to-b from-dark to-light-green sticky -z-10 bottom-0 left-0 w-full flex justify-center items-end">
+      <div class="flex justify-center text-center">
+        <img src="assets/images/pixxen-footerlogo.png" class="img-fluid w-full object-contain" alt="footerlogo" />
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js">
+  </script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
