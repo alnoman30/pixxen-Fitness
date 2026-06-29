@@ -1940,7 +1940,6 @@ window.addEventListener("load", () => {
 });
 
 // fitness counter animation
-// Counter animation
 document.addEventListener('DOMContentLoaded', () => {
 
     const counters = document.querySelectorAll('.fitness-counter');
@@ -2006,7 +2005,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// 
+// Service section js
 const svcRows = document.querySelectorAll('.svc-row');
 
 if (svcRows.length > 0) {
@@ -2054,3 +2053,208 @@ if (svcRows.length > 0) {
     });
   });
 }
+
+// Section divider animation
+
+document.querySelectorAll(".energy-divider").forEach(section => {
+
+    const beam = section.querySelector(".energy-beam");
+    const core = section.querySelector(".energy-core");
+
+    const paths = [
+        ...section.querySelectorAll("path")
+    ];
+
+
+function createSparks(){
+
+    for(let i = 0; i < 80; i++){
+
+        const spark = document.createElement("div");
+        spark.className = "energy-spark";
+        section.appendChild(spark);
+
+
+        gsap.set(spark, {
+
+            x: gsap.utils.random(
+                0,
+                section.offsetWidth
+            ),
+
+            y: gsap.utils.random(
+                -20,
+                160
+            ),
+
+            scale: gsap.utils.random(.8, 2),
+            opacity: gsap.utils.random(.6, 1)
+
+        });
+
+
+        gsap.to(spark, {
+
+            x: `+=${gsap.utils.random(-160,160)}`,
+            y: `+=${gsap.utils.random(-140,140)}`,
+
+            scale: 0,
+
+            opacity:0,
+
+            duration: gsap.utils.random(.7,1.8),
+
+            delay: Math.random() * .8,
+
+            ease:"power2.out",
+
+            onComplete:()=>spark.remove()
+
+        });
+
+    }
+
+}
+
+
+    function activate(){
+
+        // stop previous animation cleanly
+        gsap.killTweensOf(paths);
+        gsap.killTweensOf(beam);
+        gsap.killTweensOf(core);
+
+
+        // reset without glow
+        gsap.set(paths, {
+
+            fill:"#212121",
+            opacity:.75
+
+        });
+
+
+        gsap.set([beam, core], {
+
+            x:-250,
+            opacity:.2
+
+        });
+
+
+
+        const tl = gsap.timeline();
+
+
+
+        /*
+            SLOW ENERGY SWEEP
+        */
+
+        tl.to([beam, core], {
+
+            x: window.innerWidth + 400,
+            opacity:1,
+            duration:2,
+            ease:"power2.inOut",
+
+            onStart:createSparks
+
+        });
+
+
+
+        /*
+            ENERGY TRAVELS THROUGH BARS
+        */
+
+        paths.forEach((path, i) => {
+
+
+            tl.to(path, {
+
+                fill:"#ffffff",
+                opacity:1,
+                duration:.14,
+                ease:"power1.out"
+
+            }, i * .075);
+
+
+            tl.to(path, {
+
+                opacity:.85,
+                duration:.7,
+                ease:"power2.out"
+
+            }, i * .075 + .14);
+
+
+        });
+
+
+
+        /*
+            FINAL ENERGY BLOOM (NO GLOW)
+        */
+
+        tl.to(paths, {
+
+            opacity:1,
+
+            stagger:{
+
+                each:.035,
+                from:"end"
+
+            },
+
+            duration:.45,
+            ease:"power2.out"
+
+        });
+
+
+
+        /*
+            KEEP POWER ACTIVE (NO GLOW)
+        */
+
+        gsap.to(paths, {
+
+            opacity:.75,
+            duration:2.8,
+            repeat:-1,
+            yoyo:true,
+            ease:"sine.inOut"
+
+        });
+
+
+
+        gsap.to([beam, core], {
+
+            opacity:.55,
+            duration:3,
+            repeat:-1,
+            yoyo:true,
+            ease:"sine.inOut"
+
+        });
+
+    }
+
+
+
+    ScrollTrigger.create({
+
+        trigger:section,
+        start:"top 80%",
+
+        onEnter:activate,
+        onEnterBack:activate
+
+    });
+
+
+});

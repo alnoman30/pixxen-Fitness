@@ -854,3 +854,101 @@ html.lenis body {
 
 }
 
+.energy-divider{
+    position:relative;
+    overflow:hidden;
+}
+
+
+/* SVG base */
+
+.energy-divider svg{
+    opacity:.32;
+    transform-origin:center;
+}
+
+.energy-divider path{
+    fill:#212121;
+}
+
+
+/* soft plasma */
+
+.energy-beam{
+
+    position:absolute;
+
+    top:-20%;
+    bottom:-20%;
+
+    width:180px;
+
+    left:-220px;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.15),
+        rgba(255,255,255,.85),
+        rgba(255,255,255,.15),
+        transparent
+    );
+
+    filter:
+    blur(22px)
+    drop-shadow(0 0 25px white);
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+
+/* bright center */
+
+.energy-core{
+
+    position:absolute;
+
+    top:0;
+    bottom:0;
+
+    width:25px;
+
+    left:-100px;
+
+    background:white;
+
+    filter:
+    blur(8px)
+    drop-shadow(0 0 20px white);
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+
+/* sparks */
+
+.energy-spark{
+
+    position:absolute;
+
+    width:4px;
+    height:4px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:
+    0 0 12px white,
+    0 0 25px white;
+
+    pointer-events:none;
+
+}
