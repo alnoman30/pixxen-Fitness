@@ -845,16 +845,8 @@ html.lenis body {
     font-weight: 400 !important;
 }
 
-.parallax-bg {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
-  /* Extra space so movement doesn't reveal gaps */
-
-}
-
-.energy-divider{
+.fitness-energy-divider{
     position:relative;
     overflow:hidden;
 }
@@ -862,19 +854,19 @@ html.lenis body {
 
 /* SVG base */
 
-.energy-divider svg{
+.fitness-energy-divider svg{
     opacity:.32;
     transform-origin:center;
 }
 
-.energy-divider path{
+.fitness-energy-divider path{
     fill:#212121;
 }
 
 
 /* soft plasma */
 
-.energy-beam{
+.fitness-energy-beam{
 
     position:absolute;
 
@@ -908,7 +900,7 @@ html.lenis body {
 
 /* bright center */
 
-.energy-core{
+.fitness-energy-core{
 
     position:absolute;
 
@@ -934,7 +926,7 @@ html.lenis body {
 
 /* sparks */
 
-.energy-spark{
+.fitness-energy-spark{
 
     position:absolute;
 
@@ -951,4 +943,22 @@ html.lenis body {
 
     pointer-events:none;
 
+}
+
+.fitness-magnet-item {
+    cursor: pointer;
+}
+
+.fitness-magnet-item-svg {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    will-change: transform;
+    transform: translate3d(0,0,0);
+}
+
+.fitness-magnet-item-svg img {
+    display: block;
+    pointer-events: none;
+    user-select: none;
 }

@@ -2056,10 +2056,10 @@ if (svcRows.length > 0) {
 
 // Section divider animation
 
-document.querySelectorAll(".energy-divider").forEach(section => {
+document.querySelectorAll(".fitness-energy-divider").forEach(section => {
 
-    const beam = section.querySelector(".energy-beam");
-    const core = section.querySelector(".energy-core");
+    const beam = section.querySelector(".fitness-energy-beam");
+    const core = section.querySelector(".fitness-energy-core");
 
     const paths = [
         ...section.querySelectorAll("path")
@@ -2071,7 +2071,7 @@ function createSparks(){
     for(let i = 0; i < 80; i++){
 
         const spark = document.createElement("div");
-        spark.className = "energy-spark";
+        spark.className = "fitness-energy-spark";
         section.appendChild(spark);
 
 
@@ -2257,4 +2257,37 @@ function createSparks(){
     });
 
 
+});
+
+// Fitness magnet svg animate
+document.querySelectorAll(".fitness-magnet-item").forEach((item) => {
+  const icon = item.querySelector(".fitness-magnet-item-svg");
+  let bounds;
+
+  item.addEventListener("mouseenter", () => {
+    bounds = item.getBoundingClientRect();
+  });
+
+  item.addEventListener("mousemove", (e) => {
+    if (!bounds || !icon) return;
+
+    const x = e.clientX - bounds.left - bounds.width / 2;
+    const y = e.clientY - bounds.top - bounds.height / 2;
+
+    gsap.to(icon, {
+      x: x * 0.08,
+      y: y * 0.08,
+      duration: 1.2,
+      ease: "power2.out"
+    });
+  });
+
+  item.addEventListener("mouseleave", () => {
+    gsap.to(icon, {
+      x: 0,
+      y: 0,
+      duration: 1.4,
+      ease: "elastic.out(1, 0.3)"
+    });
+  });
 });

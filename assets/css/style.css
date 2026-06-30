@@ -229,9 +229,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -291,9 +288,6 @@
     @media (width >= 96rem) {
       max-width: 96rem;
     }
-  }
-  .mx-2 {
-    margin-inline: calc(var(--spacing) * 2);
   }
   .mx-2\.5 {
     margin-inline: calc(var(--spacing) * 2.5);
@@ -367,9 +361,6 @@
   .inline-flex {
     display: inline-flex;
   }
-  .table {
-    display: table;
-  }
   .aspect-4\/3 {
     aspect-ratio: 4/3;
   }
@@ -403,9 +394,6 @@
   .min-h-20 {
     min-height: calc(var(--spacing) * 20);
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-3\/5 {
     width: calc(3/5 * 100%);
   }
@@ -421,17 +409,11 @@
   .w-13 {
     width: calc(var(--spacing) * 13);
   }
-  .w-22 {
-    width: calc(var(--spacing) * 22);
-  }
   .w-22\.5 {
     width: calc(var(--spacing) * 22.5);
   }
   .w-34 {
     width: calc(var(--spacing) * 34);
-  }
-  .w-47 {
-    width: calc(var(--spacing) * 47);
   }
   .w-47\.5 {
     width: calc(var(--spacing) * 47.5);
@@ -457,9 +439,6 @@
   .max-w-184 {
     max-width: calc(var(--spacing) * 184);
   }
-  .max-w-238 {
-    max-width: calc(var(--spacing) * 238);
-  }
   .max-w-238\.5 {
     max-width: calc(var(--spacing) * 238.5);
   }
@@ -472,9 +451,6 @@
   .min-w-200 {
     min-width: calc(var(--spacing) * 200);
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
   }
@@ -483,10 +459,6 @@
   }
   .origin-center {
     transform-origin: center;
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
@@ -588,13 +560,6 @@
   }
   .gap-25 {
     gap: calc(var(--spacing) * 25);
-  }
-  .space-y-1 {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 1) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
-    }
   }
   .space-y-1\.5 {
     :where(& > :not(:last-child)) {
@@ -714,9 +679,6 @@
   .border-dark2 {
     border-color: var(--color-dark2);
   }
-  .border-white {
-    border-color: var(--color-white);
-  }
   .border-white\/16 {
     border-color: color-mix(in srgb, #fff 16%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -799,10 +761,6 @@
   }
   .from-dark {
     --tw-gradient-from: var(--color-dark);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .from-white {
-    --tw-gradient-from: var(--color-white);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .from-white\/10 {
@@ -1012,19 +970,12 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-0 {
     opacity: 0%;
   }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .blur {
     --tw-blur: blur(8px);
@@ -1045,10 +996,6 @@
   }
   .backdrop-blur-sm {
     --tw-backdrop-blur: blur(var(--blur-sm));
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
-  .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -2642,23 +2589,18 @@ html.lenis, html.lenis body {
 .common-paragraph p {
   font-weight: 400 !important;
 }
-.parallax-bg {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.energy-divider {
+.fitness-energy-divider {
   position: relative;
   overflow: hidden;
 }
-.energy-divider svg {
+.fitness-energy-divider svg {
   opacity: .32;
   transform-origin: center;
 }
-.energy-divider path {
+.fitness-energy-divider path {
   fill: #212121;
 }
-.energy-beam {
+.fitness-energy-beam {
   position: absolute;
   top: -20%;
   bottom: -20%;
@@ -2669,7 +2611,7 @@ html.lenis, html.lenis body {
   opacity: 0;
   pointer-events: none;
 }
-.energy-core {
+.fitness-energy-core {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2680,7 +2622,7 @@ html.lenis, html.lenis body {
   opacity: 0;
   pointer-events: none;
 }
-.energy-spark {
+.fitness-energy-spark {
   position: absolute;
   width: 4px;
   height: 4px;
@@ -2688,6 +2630,21 @@ html.lenis, html.lenis body {
   background: white;
   box-shadow: 0 0 12px white, 0 0 25px white;
   pointer-events: none;
+}
+.fitness-magnet-item {
+  cursor: pointer;
+}
+.fitness-magnet-item-svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
+  transform: translate3d(0,0,0);
+}
+.fitness-magnet-item-svg img {
+  display: block;
+  pointer-events: none;
+  user-select: none;
 }
 @property --tw-translate-x {
   syntax: "*";
@@ -2869,11 +2826,6 @@ html.lenis, html.lenis body {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -3013,7 +2965,6 @@ html.lenis, html.lenis body {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
