@@ -1,0 +1,3859 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <!-- Splide CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <nav class="bg-dark border-b border-dark2">
+    <div class="mx-auto">
+      <div class="flex items-center justify-between h-12">
+        <div class="flex items-center sm:gap-4 gap-3">
+          <!-- Desktop Sidebar Button -->
+          <button id="desktop-sidebar" aria-label="Toggle menu"
+            class="demo-trigger hidden lg:block xl:px-19 md:px-6 py-5 bg-dark2 hover:bg-dark cursor-pointer transition-colors"
+            aria-label="Toggle menu">
+            <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="42" height="2" fill="white" />
+              <rect y="6" width="42" height="2" fill="white" />
+            </svg>
+          </button>
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-toggle" class="lg:hidden text-white hover:text-teal p-2 transition-colors"
+            aria-label="Toggle mobile menu">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="12" width="32" height="2" fill="white" />
+              <rect y="18" width="32" height="2" fill="white" />
+            </svg>
+          </button>
+          <a href="index.html" class="flex items-center">
+            <!-- replace with your logo img -->
+            <img src="assets/images/pixxen-logo.png" alt="Pixxen" class="img-fluid sm:w-auto w-34" />
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-8">
+          <!-- ====== SERVICES DROPDOWN ====== -->
+          <div class="desktop-dropdown">
+            <a href="#services"
+              class="text-white hover:text-light-green transition-colors text-base font-medium desktop-dropdown-toggle">
+              SERVICES <span class="desktop-dropdown-icon ml-1">+</span>
+            </a>
+
+            <!-- Mega panel: list LEFT + grid RIGHT -->
+            <div class="desktop-dropdown-menu">
+              <!-- LEFT: service items -->
+              <ul class="dropdown-service-list">
+                <li>
+                  <a href="mobile-app-design.html">
+                    <span class="service-icon">
+                      <!-- Mobile icon -->
+                      <img src="assets/images/dropdownicon1.svg" class="img-fluid" alt="dropdown-icon" />
+                    </span>
+                    MOBILE APP DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="dashboard-design.html">
+                    <span class="service-icon">
+                      <!-- Dashboard/pie icon -->
+                      <img src="assets/images/dropdownicon2.svg" class="img-fluid" alt="dropdown-icon" />
+                    </span>
+                    DASHBOARD DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="website-design.html">
+                    <span class="service-icon">
+                      <!-- Monitor icon -->
+                      <img src="assets/images/dropdownicon3.svg" class="img-fluid" alt="dropdown-icon" />
+                    </span>
+                    WEBSITE DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="web-application-design.html">
+                    <span class="service-icon">
+                      <!-- Laptop icon -->
+                      <img src="assets/images/dropdownicon4.svg" class="img-fluid" alt="dropdown-icon" />
+                    </span>
+                    WEB APP DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="saas-design.html">
+                    <span class="service-icon">
+                      <!-- Desktop/screen icon -->
+                      <img src="assets/images/dropdownicon5.svg" class="img-fluid" alt="dropdown-icon" />
+                    </span>
+                    SAAS DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="branding-design.html">
+                    <span class="service-icon">
+                      <!-- Brand/star icon -->
+                      <img src="assets/images/dropdownicon6.svg" class="img-fluid" alt="dropdown-icon" />
+                    </span>
+                    BRANDING
+                  </a>
+                </li>
+              </ul>
+
+              <!-- right: items -->
+              <div class="flex items-end">
+                <img src="assets/images/dropdown-shape.svg" alt="" />
+              </div>
+            </div>
+            <!-- end .desktop-dropdown-menu -->
+          </div>
+          <!-- ====== end SERVICES ====== -->
+
+          <a href="case-study.html"
+            class="text-white hover:text-light-green transition-colors text-base font-medium">CASE
+            STUDIES</a>
+          <a href="about.html"
+            class="text-white hover:text-light-green transition-colors text-base font-medium">ABOUT</a>
+          <a href="blog.html" class="text-white hover:text-light-green transition-colors text-base font-medium">BLOG</a>
+          <a href="contact.html"
+            class="text-white hover:text-light-green transition-colors text-base font-medium">Contact</a>
+        </div>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden lg:flex items-center">
+          <a href="contact.html"
+            class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block xl:px-12 md:px-5 py-3 text-white border border-dark2 transition-all font-medium">
+            <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+              <span class="t-up text-base font-medium text-white uppercase">OUR Contact</span>
+              <span class="t-down text-base font-medium text-white uppercase">OUR Contact</span>
+            </div>
+          </a>
+          <a href="contact.html"
+            class="xl:px-12 md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-light-green text-dark transition-colors font-bold">
+            <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+              <span class="t-up text-base font-medium text-dark uppercase">Let’s Connect</span>
+              <span class="t-down text-base font-medium text-dark uppercase">Let’s Connect</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Mobile LET'S CONNECT -->
+        <a href="contact.html"
+          class="lg:hidden px-4 sm:px-5 mobile-letconnect mega-reveal-btn relative overflow-hidden cursor-pointer py-4 sm:py-4 bg-white text-black transition-colors font-bold">
+          <div class="text-mask sm:h-5 h-4 overflow-hidden flex flex-col">
+            <span class="t-up text-sm font-medium text-black uppercase">OUR Let’s Connect</span>
+            <span class="t-down text-sm font-medium text-black uppercase">OUR Let’s Connect</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- ====================== MOBILE MENU (2-panel) ====================== -->
+    <!-- Dark overlay -->
+    <div id="mobile-overlay" class="mobile-overlay"></div>
+
+    <!-- Wrapper holds both panels -->
+    <div id="mobile-menu-wrapper" class="mobile-menu-wrapper">
+      <!-- PANEL 1: Main Menu -->
+      <div id="mm-main" class="mm-panel mm-main">
+        <div class="mm-main-header">
+          <span class="mm-title">Menu</span>
+          <button id="mm-close" class="mm-close-btn" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                fill="white" />
+            </svg>
+          </button>
+        </div>
+
+        <ul class="mm-nav-list">
+          <li>
+            <!-- SERVICES: opens panel 2 -->
+            <button id="mm-services-trigger" class="mm-nav-link w-full text-left"
+              style="background: none; border: none; cursor: pointer">
+              SERVICES
+              <span class="mm-plus">+</span>
+            </button>
+          </li>
+          <li>
+            <a href="case-study.html" class="mm-nav-link">case studies</a>
+          </li>
+          <li><a href="about.html" class="mm-nav-link">about</a></li>
+          <li><a href="blog.html" class="mm-nav-link">blog</a></li>
+          <li><a href="contact.html" class="mm-nav-link">contact</a></li>
+          <li><a href="team.html" class="mm-nav-link">team</a></li>
+          <li>
+            <div class="flex justify-start mt-8 mx-4">
+              <a href="contact.html"
+                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-white transition-all duration-200">
+                <div class="btn-inner relative z-2 flex items-center gap-3">
+                  <div
+                    class="icon-circle h-6 w-6 rounded-full bg-black flex items-center justify-center overflow-hidden">
+                    <div class="icon-slider flex flex-row">
+                      <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                        <path
+                          d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                          fill="var(--color-white)" />
+                      </svg>
+                      <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                        <path
+                          d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                          fill="var(--color-white)" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                    <span class="t-up md:text-[20px] text-base font-medium text-black uppercase">Let’s Connect</span>
+                    <span class="t-down md:text-[20px] text-base font-medium text-black uppercase">Let’s Connect</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- LET'S CONNECT -->
+        <div>
+          <div>
+            <div class="w-full flex justify-end">
+              <img src="assets/images/menu-mobile-shape.svg" class="img-fluid sm:w-auto w-[190px]" alt="mobile menu" />
+            </div>
+            <img src="assets/images/mobile-bottom-logo.svg" class="img-fluid w-full" alt="mobile menu" />
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 2: Services -->
+      <div id="mm-services" class="mm-panel mm-services">
+        <div class="mm-services-header">
+          <button id="mm-back" class="mm-back-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            BACK
+          </button>
+          <button id="mm-services-close" class="mm-close-btn" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                fill="white" />
+            </svg>
+          </button>
+        </div>
+
+        <div>
+          <div class="mm-services-title">Services</div>
+
+          <!-- 2×3 grid -->
+          <div class="mm-services-grid">
+            <!-- Mobile App Design -->
+            <a href="mobile-app-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon1.svg" class="img-fluid" alt="dropdown-icon" />
+              </span>
+              <span class="card-label">MOBILE APP DESIGN</span>
+            </a>
+            <!-- Dashboard Design -->
+            <a href="dashboard-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon2.svg" class="img-fluid" alt="dropdown-icon" />
+              </span>
+              <span class="card-label">DASHBOARD DESIGN</span>
+            </a>
+            <!-- Website Design -->
+            <a href="website-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon3.svg" class="img-fluid" alt="dropdown-icon" />
+              </span>
+              <span class="card-label">WEBSITE DESIGN</span>
+            </a>
+            <!-- Web App Design -->
+            <a href="web-application-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon4.svg" class="img-fluid" alt="dropdown-icon" />
+              </span>
+              <span class="card-label">WEB APP DESIGN</span>
+            </a>
+            <!-- SaaS Design -->
+            <a href="saas-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon5.svg" class="img-fluid" alt="dropdown-icon" />
+              </span>
+              <span class="card-label">SAAS DESIGN</span>
+            </a>
+            <!-- Branding -->
+            <a href="branding-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon6.svg" class="img-fluid" alt="dropdown-icon" />
+              </span>
+              <span class="card-label">BRANDING</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- decorative bottom grid -->
+        <div>
+          <div>
+            <div class="w-full flex justify-end">
+              <img src="assets/images/menu-mobile-shape.svg" class="img-fluid sm:w-auto w-47.5" alt="mobile menu" />
+            </div>
+            <img src="assets/images/mobile-bottom-logo.svg" class="img-fluid w-full" alt="mobile menu" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end mobile-menu-wrapper -->
+  </nav>
+
+  <!-- Full page menu -->
+  <div id="pixxen-menu" role="dialog" aria-modal="true" aria-label="Main navigation">
+    <!-- TOP PANEL: slides in from top -->
+    <div class="menu-top" id="menu-top">
+      <!-- Grid decoration top-left -->
+      <div class="deco-cross" style="top: 0px; left: 0px">
+        <img src="assets/images/large-menu-top.svg" class="img-fluid" alt="" />
+      </div>
+
+      <!-- Grid decoration top-right area -->
+      <div class="deco-cross" style="bottom: 0px; right: 0px">
+        <img src="assets/images/large-menu-bottom.svg" class="img-fluid" alt="" />
+      </div>
+
+      <!-- LET'S CONNECT -->
+
+      <a href="contact.html"
+        class="xl:px-12 connect-btn md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-light-green text-black transition-colors font-bold">
+        <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+          <span class="t-up text-base font-medium text-black uppercase">Let’s Connect</span>
+          <span class="t-down text-base font-medium text-black uppercase">Let’s Connect</span>
+        </div>
+      </a>
+
+      <!-- CLOSE BUTTON -->
+      <div class="close-wrap">
+        <button class="close-btn" id="menu-close" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- NAV LINKS -->
+      <nav class="nav-columns" id="nav-columns">
+        <div class="nav-col" id="col-services">
+          <div class="nav-col-title">Services</div>
+          <ul>
+            <li><a href="mobile-app-design.html">Mobile App Design</a></li>
+            <li><a href="dashboard-design.html">Dashboard Design</a></li>
+            <li><a href="website-design.html">Website Design</a></li>
+            <li><a href="web-application-design.html">Web App Design</a></li>
+            <li><a href="saas-design.html">SaaS Design</a></li>
+            <li><a href="branding-design.html">Branding</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col" id="col-pixxen">
+          <div class="nav-col-title">Pixxen</div>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="case-study.html">Case Studies</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col" id="col-resources">
+          <div class="nav-col-title">Resources</div>
+          <ul>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col" id="col-legal">
+          <div class="nav-col-title">Legal</div>
+          <ul>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- /menu-top -->
+
+    <!-- BOTTOM PANEL: slides in from bottom (logo bar) -->
+    <div class="menu-bottom" id="menu-bottom">
+      <!-- LOGO -->
+      <div class="bottom-logo" id="bottom-logo">
+        <img src="assets/images/pixxen-footerlogo.png" class="img-fluid" alt="largemenu" />
+      </div>
+    </div>
+    <!-- /menu-bottom -->
+  </div>
+  <!-- Full page menu -->
+
+  <!-- Banner section -->
+  <section
+    class="relative w-full min-h-screen bg-cover bg-center bg-no-repeat text-white px-5 py-10 sm:px-8 md:px-12 lg:px-20 md:py-16"
+    style="
+    background-image:
+      radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(0, 0, 0, 0) 0%,
+        #000 100%
+      ),
+      url('assets/images/fitness-hero-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  ">
+
+    <div class="w-full min-h-[calc(100vh-5rem)] grid grid-cols-1 xl:grid-cols-2 gap-10 lg:gap-16">
+
+
+      <!-- LEFT COLUMN -->
+      <div class="flex flex-col justify-between lg:pt-10">
+
+        <!-- Heading + Button -->
+        <div class="space-y-6 lg:space-y-8">
+
+          <h1
+            class="font-bogle text-white text-[50px] sm:text-[60px] md:text-[80px] font-normal leading-[100%] pt-8 md:pt-0 text-center md:text-left">
+            <span class="text-light-green">Fitness Studio</span> websites Design to drive intro offers & bookings
+          </h1>
+
+
+          <!-- CTA -->
+          <div class="flex justify-center md:justify-start font-anton">
+
+            <a href="contact.html"
+              class="inline-flex items-center justify-center px-8 py-3 sm:px-12 sm:py-5 mega-reveal-btn relative overflow-hidden bg-light-green uppercase transition-colors [clip-path:polygon(8%_0%,100%_0%,93%_100%,0%_100%)]">
+
+              <div class="text-mask h-6 sm:h-7 overflow-hidden flex flex-col">
+
+                <span class="t-up text-base sm:text-xl md:text-2xl text-black">
+                  Book a free 15-min call
+                </span>
+
+                <span class="t-down text-base sm:text-xl md:text-2xl text-black">
+                  Book a free 15-min call
+                </span>
+
+              </div>
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Price -->
+        <div class="w-full pt-6 md:pt-8 border-t border-white/32 flex items-center gap-3 font-bogle mt-12">
+
+          <div class="shrink-0">
+            <svg class="w-12 md:w-14 lg:w-16 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 78" fill="none">
+
+              <path d="M62.7749 0.632141L0.774902 76.6321" stroke="#B2FF00" stroke-width="2" />
+
+            </svg>
+          </div>
+
+
+          <div>
+
+            <span
+              class="block text-lg sm:text-xl md:text-2xl font-normal leading-[100%] text-light-green uppercase mb-1">
+              EVERYTHING INCLUDED
+            </span>
+
+
+            <span class="text-white text-4xl sm:text-5xl font-normal leading-[100%]">
+              999 USD
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- RIGHT COLUMN -->
+      <div class="flex flex-col justify-between items-end lg:pt-10">
+
+        <!-- Description -->
+        <div
+          class="w-full max-w-137 font-stacksans text-white text-sm sm:text-base md:text-lg font-normal leading-[130%] text-center md:text-left">
+
+          <p>
+            Logo, branding, custom fitness studio website, SEO content built
+            around real class and modality keywords, on-page SEO, and Google
+            Business Profile setup. Every page engineered for the moment a
+            prospect decides whether to claim your intro offer or close the tab
+            and try the boutique two blocks over.
+          </p>
+
+        </div>
+
+
+        <!-- Stats -->
+        <div class="w-full max-w-180 mt-12">
+
+          <div class="grid grid-cols-3 gap-8 text-center md:text-right">
+
+
+            <!-- Counter 1 -->
+            <div>
+
+              <div class="font-bogle text-white text-4xl sm:text-5xl leading-[100%]">
+
+                <span class="fitness-counter" data-target="14">
+                  0
+                </span>
+
+              </div>
+
+
+              <div class="font-stacksans text-white text-sm sm:text-base md:text-lg leading-[130%] mt-2">
+                Days to launch
+              </div>
+
+            </div>
+
+
+            <!-- Counter 2 -->
+            <div>
+
+              <div class="font-bogle text-white text-4xl sm:text-5xl leading-[100%]">
+
+                <span class="fitness-counter" data-target="50" data-suffix="+">
+                  0
+                </span>
+
+              </div>
+
+
+              <div class="font-stacksans text-white text-sm sm:text-base md:text-lg leading-[130%] mt-2">
+                Fitness sites built
+              </div>
+
+            </div>
+
+
+            <!-- Counter 3 -->
+            <div>
+
+              <div class="font-bogle text-white text-4xl sm:text-5xl leading-[100%]">
+
+                <span class="fitness-counter" data-target="200" data-suffix="+">
+                  0
+                </span>
+
+              </div>
+
+
+              <div class="font-stacksans text-white text-sm sm:text-base md:text-lg leading-[130%] mt-2">
+                Monthly retainer
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+  <!-- Banner section -->
+
+  <!-- divider animation -->
+  <section class="fitness-energy-divider bg-black overflow-hidden">
+    <div class="container">
+      <div class="flex justify-between gap-10 md:gap-50 lg:gap-100">
+        <!-- energy beam -->
+        <div class="fitness-energy-beam"></div>
+        <div class="fitness-energy-core"></div>
+        <!-- Left -->
+        <div class="left  flex shrink-0">
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+        </div>
+
+        <!-- Right -->
+        <div class="right flex shrink-0 lg:-mr-25">
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- divider animation -->
+
+  <!-- the Real problems section start  -->
+  <section
+    class="fitness-service bg-black section-padding overflow-hidden common-paragraph  selection:bg-light-green selection:text-black">
+    <div class="container font-bogle">
+
+      <!-- Section Title -->
+      <h2 class="text-center text-white text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[100%] ">
+        The Real Problems
+      </h2>
+
+      <!-- List -->
+      <ul class="my-5 md:my-16">
+
+        <!-- 01 · No intro offer above the fold -->
+        <li
+          class="svc-row relative overflow-hidden cursor-pointer border-b border-t border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service1.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-2 md:gap-x-10 lg:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">1</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              No intro offer above the fold
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              The intro offer is the #1 conversion driver for fitness. Studios that hide it behind 'Memberships' lose
+              60–70% of qualified intro traffic to studios that put it in the hero.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              The intro offer is the #1 conversion driver for fitness. Studios that hide it behind 'Memberships' lose
+              60–70% of qualified intro traffic to studios that put it in the hero.
+            </span>
+          </div>
+        </li>
+        <!-- 02 · Class schedule trapped in a Mindbody iframe -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service2.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-2 md:gap-x-10 lg:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">2</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Class schedule trapped in a Mindbody iframe
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              The intro offer is the #1 conversion driver for fitness. Studios that hide it behind 'Memberships' lose
+              60–70% of qualified intro traffic to studios that put it in the hero.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Mindbody, ClassPass, and Zen Planner embeds are slow, ugly, and dilute branding. The schedule should feel
+              like your site, not an iframe ad for the platform you pay $159/month to use.
+            </span>
+          </div>
+        </li>
+        <!-- 03 · Membership pricing hidden behind 'Contact us' -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service3.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-2 md:gap-x-10 lg:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">3</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Membership pricing hidden behind 'Contact us'
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Prospects in 2026 don't 'call for pricing.' They Google your competitor whose membership tiers are
+              published, then book a free trial there instead.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Mindbody, ClassPass, and Zen Planner embeds are slow, ugly, and dilute branding. The schedule should feel
+              like your site, not an iframe ad for the platform you pay $159/month to use.
+            </span>
+          </div>
+        </li>
+        <!-- 04 · No facility tour, no instructor faces, no vibe -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service4.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-2 md:gap-x-10 lg:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">4</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              No facility tour, no instructor faces, no vibe
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Fitness is a high-trust transaction — strangers in your sweaty, vulnerable, half-dressed presence. Without
+              a facility tour video and instructor headshots, prospects pick the studio they can actually see first.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Mindbody, ClassPass, and Zen Planner embeds are slow, ugly, and dilute branding. The schedule should feel
+              like your site, not an iframe ad for the platform you pay $159/month to use.
+            </span>
+          </div>
+        </li>
+        <!-- 05 · Class descriptions written like a TV listing -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service5.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-2 md:gap-x-10 lg:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">5</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Class descriptions written like a TV listing
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Fitness is a high-trust transaction — strangers in your sweaty, vulnerable, half-dressed presence. Without
+              a facility tour video and instructor headshots, prospects pick the studio they can actually see first.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              'A challenging full-body workout combining cardio and strength' tells a prospect nothing. Real
+              descriptions name the format, the music, the typical class size, what to wear, and who it's for.
+            </span>
+          </div>
+        </li>
+        <!-- 06 · Generic 'About' page where instructor profiles should live -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service1.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-2 md:gap-x-10 lg:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">6</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Generic 'About' page where instructor profiles should live
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Fitness is a high-trust transaction — strangers in your sweaty, vulnerable, half-dressed presence. Without
+              a facility tour video and instructor headshots, prospects pick the studio they can actually see first.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Boutique fitness is sold on instructor personality. Per-instructor profile pages with specialties,
+              certifications, and a real bio increase class bookings of that instructor by 200–400%.
+            </span>
+          </div>
+        </li>
+        <!-- 07 · Not ranking for 'yoga near me' or 'CrossFit [neighborhood]' -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service2.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-2 md:gap-x-10 lg:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">7</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Not ranking for 'yoga near me' or 'CrossFit [neighborhood]'
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Mindbody's free site ranks for nothing local because every studio shares the same shallow template. Proper
+              local SEO with neighborhood-targeted pages dominates over the platform's generic listings.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Mindbody's free site ranks for nothing local because every studio shares the same shallow template. Proper
+              local SEO with neighborhood-targeted pages dominates over the platform's generic listings.
+            </span>
+          </div>
+        </li>
+        <!-- 08 · Class booking flow is 7 taps on mobile -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service3.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-2 md:gap-x-10 lg:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">8</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Class booking flow is 7 taps on mobile
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Average fitness traffic is 75%+ mobile. If booking takes more than 3 taps, you've lost half of the people
+              who actually wanted to come.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Average fitness traffic is 75%+ mobile. If booking takes more than 3 taps, you've lost half of the people
+              who actually wanted to come.
+            </span>
+          </div>
+        </li>
+        <!-- 10 · Member testimonials buried on a separate page -->
+        <li class="svc-row relative overflow-hidden cursor-pointer border-b  border-[#333] opacity-0 translate-y-5"
+          data-img="assets/images/service3.webp">
+          <div class="svc-bg absolute inset-0 bg-cover bg-center opacity-0 scale-[1.08] z-0"></div>
+          <div class="svc-overlay absolute inset-0 z-1 opacity-0"
+            style="background: linear-gradient(to right, rgba(10,28,20,.75) 0%, rgba(10,28,20,.42) 50%, rgba(10,28,20,.72) 100%)">
+          </div>
+          <div class="svc-shimmer absolute top-0 -left-full w-3/5 h-full z-3 opacity-0"
+            style="background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.055) 50%, transparent 100%)">
+          </div>
+
+          <div class="relative z-2 grid items-start gap-x-2 md:gap-x-10 lg:gap-x-20 md:p-8 sm:p-6  p-2
+                    grid-cols-[36px_1fr] 
+                    sm:grid-cols-[48px_1fr] 
+                    md:grid-cols-[64px_5fr_6fr]">
+            <span
+              class="svc-num text-light-green text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%]">10</span>
+            <span
+              class="svc-name font-bogle text-xl sm:text-2xl md:text-[32px] font-normal leading-[100%] text-white uppercase">
+              Member testimonials buried on a separate page
+            </span>
+            <span class="hidden md:block text-lg  text-[#A7A7A7] font-stacksans leading-[130%]  font-normal">
+              Transformation stories with real photos belong on the homepage, the intro offer page, and every membership
+              tier page — not hidden under a 'Success Stories' tab nobody clicks.
+            </span>
+            <span
+              class="col-start-2 block md:hidden text-sm sm:text-base text-[#A7A7A7] font-stacksans leading-[120%] md:leading-[130%]  font-normal mt-2">
+              Transformation stories with real photos belong on the homepage, the intro offer page, and every membership
+              tier page — not hidden under a 'Success Stories' tab nobody clicks.
+            </span>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- Bottom Caption Footer -->
+      <div
+        class="text-center text-white font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[100%] md:leading-[130%] max-w-248 mx-auto pt-4 md:pt-0">
+        Transformation stories with real photos belong on the homepage, the intro offer page, and every membership tier
+        page — not hidden under a 'Success Stories' tab nobody clicks.
+      </div>
+
+    </div>
+  </section>
+  <!-- the Real problems end -->
+
+  <!-- Price plan section -->
+  <section
+    class="section-padding relative overflow-hidden common-paragraph selection:bg-light-green selection:text-black">
+
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/images/fitness-priceplan-bg.png" alt="People doing planks in a fitness studio"
+        class="w-full h-full object-cover object-center" />
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/10"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="container relative z-10">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-7 md:gap-12 lg:gap-16">
+
+        <!-- Left Content -->
+        <div
+          class="w-full max-w-184 flex flex-col items-center text-center md:text-start md:items-start space-y-3 md:space-y-6">
+          <h2
+            class="font-bogle text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[100%] uppercase text-white">
+            Everything Included
+          </h2>
+
+          <p
+            class="text-white font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] max-w-100">
+            Six separate services from six providers, or one package, one team,
+            one fixed price. Every deliverable built specifically for how fitness
+            prospects research and decide.
+          </p>
+
+          <!-- Button -->
+          <div class="w-full flex justify-center md:justify-start font-anton">
+            <a href="contact.html"
+              class="inline-flex items-center justify-center px-8 py-3 sm:px-12 sm:py-5 mega-reveal-btn relative overflow-hidden bg-light-green font-normal leading-[100%] transition-colors uppercase [clip-path:polygon(8%_0%,100%_0%,93%_100%,0%_100%)]">
+              <div class="text-mask h-6 sm:h-7 overflow-hidden flex flex-col">
+                <span class="t-up text-base sm:text-xl md:text-2xl font-normal text-black">
+                  Book a free 15-min call
+                </span>
+                <span class="t-down text-base sm:text-xl md:text-2xl font-normal text-black">
+                  Book a free 15-min call
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pricing Card -->
+        <div class="w-full max-w-full md:max-w-184">
+          <div class="bg-black/85 p-5 md:p-12 backdrop-blur-md shadow-2xl">
+            <div class="space-y-3 md:space-y-4">
+
+              <div
+                class="flex justify-between items-center border-b border-[#333] pb-2 md:pb-3 font-bogle text-sm md:text-2xl font-normal leading-[100%] gap-3">
+                <span class="text-[#A7A7A7] uppercase">
+                  Logo + Brand Identity
+                </span>
+                <span class="text-[#A7A7A7] uppercase shrink-0">$400+</span>
+              </div>
+
+              <div
+                class="flex justify-between items-start border-b border-[#333] pb-2 md:pb-3 font-bogle text-sm md:text-2xl font-normal leading-[100%] gap-3">
+                <span class="text-[#A7A7A7] uppercase">
+                  Custom 7-Page Fitness Studio Website
+                </span>
+                <span class="text-[#A7A7A7] uppercase shrink-0">$1,800+</span>
+              </div>
+
+              <div
+                class="flex justify-between items-start border-b border-[#333] pb-2 md:pb-3 font-bogle text-sm md:text-2xl font-normal leading-[100%] gap-3">
+                <span class="text-[#A7A7A7] uppercase">
+                  SEO Content With Real Keyword Research
+                </span>
+                <span class="text-[#A7A7A7] uppercase shrink-0">$800+</span>
+              </div>
+
+              <div
+                class="flex justify-between items-center border-b border-[#333] pb-2 md:pb-3 font-bogle text-sm md:text-2xl font-normal leading-[100%] gap-3">
+                <span class="text-[#A7A7A7] uppercase">
+                  Technical On-Page SEO Setup
+                </span>
+                <span class="text-[#A7A7A7] uppercase shrink-0">$500+</span>
+              </div>
+
+              <div
+                class="flex justify-between items-start border-b border-[#333] pb-2 md:pb-3 font-bogle text-sm md:text-2xl font-normal leading-[100%] gap-3">
+                <span class="text-[#A7A7A7] uppercase">
+                  Google Business Profile Optimization
+                </span>
+                <span class="text-[#A7A7A7] uppercase shrink-0">$400+</span>
+              </div>
+
+              <div
+                class="flex justify-between items-center border-b border-[#333] pb-2 md:pb-3 font-bogle text-sm md:text-2xl font-normal leading-[100%] gap-3">
+                <span class="text-[#A7A7A7] uppercase">
+                  30 Days Post-Launch Support
+                </span>
+                <span class="text-[#A7A7A7] uppercase shrink-0">$300+</span>
+              </div>
+
+              <!-- Total -->
+              <div
+                class="flex justify-between items-center pt-2 font-bogle text-base md:text-2xl font-normal leading-[100%]">
+                <span class="text-white uppercase">Total</span>
+                <span class="text-white uppercase line-through">$4,200</span>
+              </div>
+
+              <!-- Divider -->
+              <div class="h-px bg-light-green my-3 md:my-4"></div>
+
+              <!-- Package Price -->
+              <div
+                class="flex justify-between items-center pt-2 font-bogle text-base md:text-2xl font-normal leading-[100%]">
+                <span class="text-light-green uppercase">
+                  Pixxen Fitness Pack
+                </span>
+                <span class="text-light-green uppercase">
+                  $999
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- Price plan section -->
+
+  <!-- 08 Features section -->
+  <section class="bg-black section-padding common-paragraph selection:bg-light-green selection:text-black">
+    <div class="container">
+
+      <div class="section-heading text-center font-bogle max-w-184 mx-auto">
+        <h2
+          class="text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[100%] text-white font-bogle mb-3 md:mb-6">
+          08 Features
+        </h2>
+
+        <p
+          class="text-[#A7A7A7] text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans">
+          Every feature on this list exists because we've seen it move the needle on intro-offer claims and member
+          retention. Nothing here is decoration.
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 2xl:grid-cols-4 gap-5 md:gap-8 lg:gap-10 xl:gap-16 text-center mt-8 md:mt-16">
+
+        <!-- Item 1 -->
+        <div class="fitness-magnet-item flex flex-col items-center text-white max-w-82 mx-auto">
+          <div class="fitness-magnet-item-svg mb-3 md:mb-6">
+            <img src="assets/images/fitness-feature01.svg" alt="fitness-feature01">
+          </div>
+
+          <h3
+            class="font-bogle text-lg sm:text-xl md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mb-3 md:mb-6">
+            Intro offer hero with one-tap claim
+          </h3>
+
+          <p
+            class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+            Above-the-fold intro offer ("First month $49," "2 weeks unlimited $29," "3 classes $39") with a one-tap
+            claim flow. Tracked separately so you can A/B test pricing and creative.
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="fitness-magnet-item flex flex-col items-center text-white max-w-82 mx-auto">
+          <div class="fitness-magnet-item-svg mb-3 md:mb-6">
+            <img src="assets/images/fitness-feature02.svg" alt="fitness-feature02">
+          </div>
+
+          <h3
+            class="font-bogle text-lg sm:text-xl md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mb-3 md:mb-6">
+            Native class schedule, not a Mindbody iframe
+          </h3>
+
+          <p
+            class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+            Custom schedule UI that pulls live data from Mindbody, ClassPass, Zen Planner, Glofox, or Wodify via API
+            where available. Branded, fast, filterable by class type and instructor.
+          </p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="fitness-magnet-item flex flex-col items-center text-white max-w-82 mx-auto">
+          <div class="fitness-magnet-item-svg mb-3 md:mb-6">
+            <img src="assets/images/fitness-feature03.svg" alt="fitness-feature03">
+          </div>
+
+          <h3
+            class="font-bogle text-lg sm:text-xl md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mb-3 md:mb-6">
+            Membership tier comparison built into the homepage
+          </h3>
+
+          <p
+            class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+            Transparent pricing — class pack, monthly unlimited, annual, family — with what's included at each level.
+            Filters out price shoppers and qualifies serious prospects.
+          </p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="fitness-magnet-item flex flex-col items-center text-white max-w-82 mx-auto">
+          <div class="fitness-magnet-item-svg mb-3 md:mb-6">
+            <img src="assets/images/fitness-feature04.svg" alt="fitness-feature04">
+          </div>
+
+          <h3
+            class="font-bogle text-lg sm:text-xl md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mb-3 md:mb-6">
+            Per-instructor profile pages
+          </h3>
+
+          <p
+            class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+            Each instructor gets a real page — bio, specialties, certifications (RYT-200, CrossFit-L1, CPR), training,
+            class style, music preferences, photo gallery. Books fill faster when prospects can pick who teaches.
+          </p>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="fitness-magnet-item flex flex-col items-center text-white max-w-82 mx-auto">
+          <div class="fitness-magnet-item-svg mb-3 md:mb-6">
+            <img src="assets/images/fitness-feature05.svg" alt="fitness-feature05">
+          </div>
+
+          <h3
+            class="font-bogle text-lg sm:text-xl md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mb-3 md:mb-6">
+            Facility tour video and class photo galleries
+          </h3>
+
+          <p
+            class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+            A 30–60 second studio walkthrough on the homepage. Per-class photo galleries showing real members, real
+            instructors, real equipment. Fitness is sold on visible vibe.
+          </p>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="fitness-magnet-item flex flex-col items-center text-white max-w-82 mx-auto">
+          <div class="fitness-magnet-item-svg mb-3 md:mb-6">
+            <img src="assets/images/fitness-feature06.svg" alt="fitness-feature06">
+          </div>
+
+          <h3
+            class="font-bogle text-lg sm:text-xl md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mb-3 md:mb-6">
+            Mobile-first booking with tap-to-call backup
+          </h3>
+
+          <p
+            class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+            Sticky bottom CTA on mobile with "Book class" and "Call studio." Designed for the 75%+ of fitness traffic
+            arriving on phones, mid-scroll on Instagram or Google.
+          </p>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="fitness-magnet-item flex flex-col items-center text-white max-w-82 mx-auto">
+          <div class="fitness-magnet-item-svg mb-3 md:mb-6">
+            <img src="assets/images/fitness-feature07.svg" alt="fitness-feature07">
+          </div>
+
+          <h3
+            class="font-bogle text-lg sm:text-xl md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mb-3 md:mb-6">
+            Member transformation stories on every page
+          </h3>
+
+          <p
+            class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+            Real member photos and quotes — not stock — placed strategically on the homepage, intro offer page, and
+            membership pages. Pre-and-post photos with permission and signed release forms included.
+          </p>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="fitness-magnet-item flex flex-col items-center text-white max-w-82 mx-auto">
+          <div class="fitness-magnet-item-svg mb-3 md:mb-6">
+            <img src="assets/images/fitness-feature08.svg" alt="fitness-feature08">
+          </div>
+
+          <h3
+            class="font-bogle text-lg sm:text-xl md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mb-3 md:mb-6">
+            Virtual class library for studios with online offerings
+          </h3>
+
+          <p
+            class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+            For studios with on-demand or hybrid programs: a video library landing page with class previews, instructor
+            bios, and signup. Converts at-home browsers who aren't ready for in-person yet.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- 08 Features section -->
+
+  <!-- divider animation -->
+  <section class="fitness-energy-divider bg-black overflow-hidden">
+    <div class="container">
+      <div class="flex justify-between gap-10 md:gap-50 lg:gap-100">
+        <!-- energy beam -->
+        <div class="fitness-energy-beam"></div>
+        <div class="fitness-energy-core"></div>
+        <!-- Left -->
+        <div class="left  flex shrink-0">
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+        </div>
+
+        <!-- Right -->
+        <div class="right flex shrink-0 lg:-mr-25">
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- divider animation -->
+
+  <!-- Fitness Niche Section  -->
+  <section class="bg-black section-padding common-paragraph selection:bg-light-green selection:text-black">
+    <div class="container">
+      <div class=" grid grid-cols-1 xl:grid-cols-12 gap-12 xl:gap-8 items-start">
+
+        <!-- Left Sticky / seaction heading -->
+        <div class="xl:col-span-4 flex flex-col items-center xl:items-start space-y-4 md:space-y-8 xl:sticky xl:top-20">
+          <h2
+            class="text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[100%] text-white font-bogle text-center xl:text-left uppercaset uppercase">
+            Fitness Niche
+          </h2>
+
+          <p
+            class="text-[#A7A7A7] text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans text-center xl:text-left max-w-187.5">
+            A neighborhood gym, a CrossFit box, and a luxury pilates reformer studio sell entirely different experiences
+            to entirely different buyers. We design for the niche.
+          </p>
+
+          <!-- button -->
+          <div class="w-full flex justify-center xl:justify-start font-anton">
+            <a href="contact.html"
+              class="inline-flex items-center justify-center px-8 py-3 sm:px-12 sm:py-5 mega-reveal-btn relative overflow-hidden bg-light-green font-normal leading-[100%] transition-colors uppercase [clip-path:polygon(8%_0%,100%_0%,93%_100%,0%_100%)]">
+              <div class="text-mask h-6 sm:h-7 overflow-hidden flex flex-col">
+                <span class="t-up text-base sm:text-xl md:text-2xl font-normal text-black">
+                  Book a free 15-min call
+                </span>
+                <span class="t-down text-base sm:text-xl md:text-2xl font-normal text-black">
+                  Book a free 15-min call
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Grid Column -->
+        <div class="xl:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8 md:gap-y-12">
+
+          <!-- Niche 1: Gym Website Design -->
+          <div class="flex flex-col text-white group cursor-pointer items-center md:items-start">
+
+            <div class="w-full aspect-16/7 overflow-hidden bg-zinc-900"
+              style="clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);">
+              <img src="assets/images/fitness-niche01.png" alt="Gym Website Design"
+                class="w-full h-full object-contain transform scale-110 origin-center transition-transform duration-500 group-hover:scale-125">
+            </div>
+
+            <h3
+              class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mt-4 sm:mt-6 md:mt-8 transition-colors duration-300 group-hover:text-light-green text-center md:text-left">
+              Gym Website Design
+            </h3>
+
+            <p
+              class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] mt-2 md:mt-4 transition-colors duration-300 group-hover:text-white text-center md:text-left">
+              Membership tier comparison, day pass purchase, equipment list, hours and access (24/7 vs staffed).
+              Photo-heavy facility tour and class schedule for studios with group fitness add-ons.
+            </p>
+          </div>
+          <!-- Niche 2: Yoga studio website design -->
+          <div class="flex flex-col text-white group cursor-pointer items-center md:items-start">
+
+            <div class="w-full aspect-16/7 overflow-hidden bg-zinc-900"
+              style="clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);">
+              <img src="assets/images/fitness-niche02.png" alt="Yoga studio website design"
+                class="w-full h-full object-contain transform scale-110 origin-center transition-transform duration-500 group-hover:scale-125">
+            </div>
+
+            <h3
+              class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mt-4 sm:mt-6 md:mt-8 transition-colors duration-300 group-hover:text-light-green text-center md:text-left">
+              Yoga studio website design
+            </h3>
+
+            <p
+              class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] mt-2 md:mt-4 transition-colors duration-300 group-hover:text-white text-center md:text-left">
+              Class types explained in plain English (vinyasa, hatha, yin, restorative, hot, prenatal),
+              beginner-friendly tone, intro offer prominent, instructor specialties for booking-by-teacher.
+            </p>
+          </div>
+          <!-- Niche 3: CrossFit box website design -->
+          <div class="flex flex-col text-white group cursor-pointer items-center md:items-start">
+
+            <div class="w-full aspect-16/7 overflow-hidden bg-zinc-900"
+              style="clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);">
+              <img src="assets/images/fitness-niche03.png" alt="CrossFit box website design"
+                class="w-full h-full object-contain transform scale-110 origin-center transition-transform duration-500 group-hover:scale-125">
+            </div>
+
+            <h3
+              class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mt-4 sm:mt-6 md:mt-8 transition-colors duration-300 group-hover:text-light-green text-center md:text-left">
+              CrossFit box website design
+            </h3>
+
+            <p
+              class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] mt-2 md:mt-4 transition-colors duration-300 group-hover:text-white text-center md:text-left">
+              Community-focused, athlete and coach profiles, WOD examples, free intro session prominent, certification
+              display (CrossFit-L1, L2, L3). Sells on community as much as fitness.
+            </p>
+          </div>
+          <!-- Niche 4: CrossFit box website design -->
+          <div class="flex flex-col text-white group cursor-pointer items-center md:items-start">
+
+            <div class="w-full aspect-16/7 overflow-hidden bg-zinc-900"
+              style="clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);">
+              <img src="assets/images/fitness-niche04.png" alt="CrossFit box website design"
+                class="w-full h-full object-contain transform scale-110 origin-center transition-transform duration-500 group-hover:scale-125">
+            </div>
+
+            <h3
+              class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mt-4 sm:mt-6 md:mt-8 transition-colors duration-300 group-hover:text-light-green text-center md:text-left">
+              Personal training studio
+            </h3>
+
+            <p
+              class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] mt-2 md:mt-4 transition-colors duration-300 group-hover:text-white text-center md:text-left">
+              Trainer portfolios with credentials (NSCA, NASM, ACSM, CSCS), session and package pricing, transformation
+              case studies with permission, in-person vs virtual flow.
+            </p>
+          </div>
+          <!-- Niche 5: Gym Website Design -->
+          <div class="flex flex-col text-white group cursor-pointer items-center md:items-start">
+
+            <div class="w-full aspect-16/7 overflow-hidden bg-zinc-900"
+              style="clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);">
+              <img src="assets/images/fitness-niche01.png" alt="Gym Website Design"
+                class="w-full h-full object-contain transform scale-110 origin-center transition-transform duration-500 group-hover:scale-125">
+            </div>
+
+            <h3
+              class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mt-4 sm:mt-6 md:mt-8 transition-colors duration-300 group-hover:text-light-green text-center md:text-left">
+              Gym Website Design
+            </h3>
+
+            <p
+              class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] mt-2 md:mt-4 transition-colors duration-300 group-hover:text-white text-center md:text-left">
+              Membership tier comparison, day pass purchase, equipment list, hours and access (24/7 vs staffed).
+              Photo-heavy facility tour and class schedule for studios with group fitness add-ons.
+            </p>
+          </div>
+          <!-- Niche 6: Yoga studio website design -->
+          <div class="flex flex-col text-white group cursor-pointer items-center md:items-start">
+
+            <div class="w-full aspect-16/7 overflow-hidden bg-zinc-900"
+              style="clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);">
+              <img src="assets/images/fitness-niche02.png" alt="Yoga studio website design"
+                class="w-full h-full object-contain transform scale-110 origin-center transition-transform duration-500 group-hover:scale-125">
+            </div>
+
+            <h3
+              class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mt-4 sm:mt-6 md:mt-8 transition-colors duration-300 group-hover:text-light-green text-center md:text-left">
+              Yoga studio website design
+            </h3>
+
+            <p
+              class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] mt-2 md:mt-4 transition-colors duration-300 group-hover:text-white text-center md:text-left">
+              Class types explained in plain English (vinyasa, hatha, yin, restorative, hot, prenatal),
+              beginner-friendly tone, intro offer prominent, instructor specialties for booking-by-teacher.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Fitness Niche Section  -->
+
+  <!-- Serving Nationwide Section  -->
+  <section
+    class="bg-black text-white section-padding common-paragraph selection:bg-light-green selection:text-black overflow-hidden">
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 md:gap-8 items-center">
+
+        <!-- Left Column: Slanted Image Container -->
+        <div class="lg:col-span-5 w-full relative aspect-4/3 sm:aspect-5/4 lg:aspect-auto lg:h-full">
+          <div class="absolute inset-0 w-full h-full overflow-hidden"
+            style="clip-path: polygon(0 0, 100% 1%, 90% 76%, 0% 100%);">
+            <img src="assets/images/fitness-serving-nationwide.png" alt="Fitness Training"
+              class="w-full h-full object-cover object-left-top">
+          </div>
+        </div>
+
+        <!-- Right Column: Content Section -->
+        <div class="lg:col-span-7 flex flex-col space-y-6 md:space-y-8 ">
+
+          <!-- Heading Block -->
+          <div class="lg:col-span-4 flex flex-col items-center lg:items-start space-y-4 md:space-y-8 ">
+            <h2
+              class="text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[100%] text-white font-bogle text-center lg:text-left uppercase">
+              Serving nationwide
+            </h2>
+
+            <p
+              class="text-[#A7A7A7] text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans text-center lg:text-left max-w-184">
+              Fitness is hyperlocal. Members rarely travel more than 12 minutes for a class. We optimize every site for
+              your city, neighborhood, and the specific class types your local market searches for.
+            </p>
+          </div>
+
+          <!-- Cities Multi-Column List -->
+          <div
+            class="grid grid-cols-3 gap-x-4 md:gap-x-8 gap-y-2 text-[#A7A7A7] text-sm sm:text-base md:text-lg font-bold leading-[110%] md:leading-[130%] font-stacksans ">
+            <ul class="space-y-2 md:space-y-3">
+              <li>New York City</li>
+              <li>Los Angeles</li>
+              <li>Chicago</li>
+              <li>Houston</li>
+              <li>Phoenix</li>
+              <li>Philadelphia</li>
+              <li>San Antonio</li>
+            </ul>
+            <ul class="space-y-2 md:space-y-3">
+              <li>Dallas</li>
+              <li>Austin</li>
+              <li>Miami</li>
+              <li>Atlanta</li>
+              <li>Boston</li>
+              <li>Seattle</li>
+              <li>Denver</li>
+            </ul>
+            <ul class="space-y-2 md:space-y-3">
+              <li>San Francisco</li>
+              <li>San Diego</li>
+              <li>Portland</li>
+              <li>Nashville</li>
+              <li>Charlotte</li>
+              <li>Scottsdale</li>
+              <li>Toronto</li>
+            </ul>
+          </div>
+
+          <!-- Call-to-Action Button -->
+          <div class="w-full flex justify-center lg:justify-start font-anton">
+            <a href="contact.html"
+              class="inline-flex items-center justify-center px-8 py-3 sm:px-12 sm:py-5 mega-reveal-btn relative overflow-hidden bg-light-green font-normal leading-[100%] transition-colors uppercase [clip-path:polygon(8%_0%,100%_0%,93%_100%,0%_100%)]">
+              <div class="text-mask h-6 sm:h-7 overflow-hidden flex flex-col">
+                <span class="t-up text-base sm:text-xl md:text-2xl font-normal text-black">
+                  Book a free 15-min call
+                </span>
+                <span class="t-down text-base sm:text-xl md:text-2xl font-normal text-black">
+                  Book a free 15-min call
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Bottom Strategy Disclaimer -->
+          <p
+            class="text-[#A7A7A7] text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans text-center lg:text-left  max-w-184">
+            Don't see your city? We work with fitness studios across the US, Canada, and UK. Local SEO strategy adjusts
+            per market — Manhattan needs neighborhood targeting (West Village vs SoHo vs Upper East Side), Austin needs
+            East/South/Westlake splits, and London needs both boroughs and tube-line proximity content.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- divider animation -->
+  <section class="fitness-energy-divider bg-black overflow-hidden">
+    <div class="container">
+      <div class="flex justify-between gap-10 md:gap-50 lg:gap-100">
+        <!-- energy beam -->
+        <div class="fitness-energy-beam"></div>
+        <div class="fitness-energy-core"></div>
+        <!-- Left -->
+        <div class="left  flex shrink-0">
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+        </div>
+
+        <!-- Right -->
+        <div class="right flex shrink-0 lg:-mr-25">
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- divider animation -->
+
+  <!-- launched site Timeline Section  -->
+  <section class="bg-black text-white section-padding common-paragraph selection:bg-light-green selection:text-black">
+    <div class="container">
+
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-8 lg:gap-16 xl:gap-8 items-start">
+
+
+        <!-- Left Column: Heading & Content -->
+        <div class="xl:col-span-6 flex flex-col items-center xl:items-start space-y-4 xl:sticky xl:top-20">
+
+          <h2
+            class="text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[120%] text-white font-bogle text-center xl:text-left uppercase">
+
+            launched site in 14 days
+
+          </h2>
+
+
+          <p
+            class="text-[#A7A7A7] text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans text-center xl:text-left max-w-187.5">
+
+            Most fitness marketing agencies take 60–90 days for the same scope. We don't, because the package is
+            productized — same caliber of work, less margin per project, faster turnaround.
+
+          </p>
+
+        </div>
+
+
+
+
+        <!-- Right Column: Process Steps List -->
+        <div class="xl:col-span-6 space-y-5 md:space-y-8">
+
+
+          <!-- Step 1 -->
+          <div class="flex items-start space-x-3 sm:space-x-6">
+
+            <div class="shrink-0 bg-light-green/12 flex items-center justify-center"
+              style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);">
+
+              <span
+                class="font-bogle text-light-green text-lg md:text-2xl lg:text-[32px] font-normal leading-[100%] py-4 sm:py-6 px-6 sm:px-8 md:py-8.5 md:px-12">
+                1
+              </span>
+
+            </div>
+
+
+            <div class="space-y-1.5 md:space-y-3">
+
+              <h3 class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase">
+                Discovery
+              </h3>
+
+              <p
+                class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+
+                90-minute kickoff. Schedule and pricing audit. Class platform setup. Competitor review of three studios
+                outranking you.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex items-start space-x-3 sm:space-x-6">
+
+            <div class="shrink-0 bg-light-green/12 flex items-center justify-center"
+              style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);">
+
+              <span
+                class="font-bogle text-light-green text-lg md:text-2xl lg:text-[32px] font-normal leading-[100%] py-4 sm:py-6 px-6 sm:px-8 md:py-8.5 md:px-12">
+                2
+              </span>
+
+            </div>
+
+
+            <div class="space-y-1.5 md:space-y-3">
+
+              <h3 class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase">
+                Brand + design
+              </h3>
+
+              <p
+                class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+
+                Logo, palette, typography. Wireframes and comps. Photo direction. One round of revision built in.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex items-start space-x-3 sm:space-x-6">
+
+            <div class="shrink-0 bg-light-green/12 flex items-center justify-center"
+              style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);">
+
+              <span
+                class="font-bogle text-light-green text-lg md:text-2xl lg:text-[32px] font-normal leading-[100%] py-4 sm:py-6 px-6 sm:px-8 md:py-8.5 md:px-12">
+                3
+              </span>
+
+            </div>
+
+
+            <div class="space-y-1.5 md:space-y-3">
+
+              <h3 class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase">
+                Build + SEO
+              </h3>
+
+              <p
+                class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+
+                Mobile-first build. SEO content. Schema. Schedule integration. Image optimization.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Step 4 -->
+          <div class="flex items-start space-x-3 sm:space-x-6">
+
+            <div class="shrink-0 bg-light-green/12 flex items-center justify-center"
+              style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);">
+
+              <span
+                class="font-bogle text-light-green text-lg md:text-2xl lg:text-[32px] font-normal leading-[100%] py-4 sm:py-6 px-6 sm:px-8 md:py-8.5 md:px-12">
+                4
+              </span>
+
+            </div>
+
+
+            <div class="space-y-1.5 md:space-y-3">
+
+              <h3 class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase">
+                Launch + GBP
+              </h3>
+
+              <p
+                class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+
+                DNS, Search Console verification, GBP rebuild, CMS training, handoff.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- launched site Timeline Section  -->
+
+  <!-- Recent Fitness Projects Section -->
+  <section
+    class="bg-black text-white section-padding common-paragraph selection:bg-light-green selection:text-black overflow-hidden">
+    <div class="container">
+
+      <!-- Section Header  -->
+      <div class="section-heading text-center font-bogle max-w-184 mx-auto">
+        <h2
+          class="text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[100%] text-white  font-bogle mb-3 md:mb-6">
+          Recent fitness projects
+        </h2>
+        <p
+          class="text-[#A7A7A7] text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans">
+          Every feature on this list exists because we've seen it move the needle on intro-offer claims and member
+          retention. Nothing here is decoration.
+        </p>
+      </div>
+
+      <!-- Precise Card Grid Layout -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 items-start mt-6 sm:mt-10 md:mt-16">
+
+        <!-- Card -->
+        <a href="#" class="group flex flex-col bg-black cursor-pointer transition-all duration-300">
+          <!-- Image Area -->
+          <div class="w-full overflow-hidden bg-[#212121]">
+            <img src="assets/images/fitness-project01.png" alt="Anchor Yoga Co."
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          </div>
+
+          <!-- Description -->
+          <div
+            class="bg-[#212121] p-3 sm:p-4 md:p-5 flex flex-col justify-start mt-1 transition-colors duration-300 group-hover:bg-[#2b2b2b]">
+            <h3
+              class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mb-4 transition-colors duration-300 group-hover:text-light-green">
+              Anchor Yoga Co.
+            </h3>
+
+            <p
+              class="text-[#A7A7A7] text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans transition-colors duration-300 group-hover:text-white/80">
+              Intro offer claims up 287% in 60 days. Schedule density doubled.
+            </p>
+          </div>
+
+          <!-- Metrics -->
+          <div
+            class="grid grid-cols-2 bg-black border border-[#333] font-bogle font-normal mt-1 transition-colors duration-300 group-hover:border-[#555]">
+            <!-- Top Left -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-r border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5 transition-colors duration-300 group-hover:border-[#555]">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                287%
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Intro offer claims
+              </span>
+            </div>
+
+            <!-- Top Right -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5 transition-colors duration-300 group-hover:border-[#555]">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                2X
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Schedule density
+              </span>
+            </div>
+
+            <!-- Bottom Left -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-r border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5 transition-colors duration-300 group-hover:border-[#555]">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                YOGA
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Studio type
+              </span>
+            </div>
+
+            <!-- Bottom Right -->
+            <div class="p-3 sm:p-4 md:p-5 flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                2025
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Year
+              </span>
+            </div>
+          </div>
+        </a>
+
+
+        <!-- Card -->
+        <a href="#" class="group flex flex-col bg-black cursor-pointer transition-all duration-300">
+          <!-- Image Area -->
+          <div class="w-full overflow-hidden bg-[#212121]">
+            <img src="assets/images/fitness-project02.png" alt="Foundry CrossFit"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          </div>
+
+          <!-- Description -->
+          <div
+            class="bg-[#212121] p-3 sm:p-4 md:p-5 flex flex-col justify-start mt-1 transition-colors duration-300 group-hover:bg-[#2b2b2b]">
+            <h3
+              class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mb-4 transition-colors duration-300 group-hover:text-light-green">
+              Foundry CrossFit
+            </h3>
+
+            <p
+              class="text-[#A7A7A7] text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans transition-colors duration-300 group-hover:text-white/80">
+              Free intro signups: 11 → 64 per month. Member retention up 18%.
+            </p>
+          </div>
+
+          <!-- Metrics -->
+          <div
+            class="grid grid-cols-2 bg-black border border-[#333] font-bogle font-normal mt-1 transition-colors duration-300 group-hover:border-[#555]">
+            <!-- Top Left -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-r border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5 transition-colors duration-300 group-hover:border-[#555]">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                18%
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Member retention
+              </span>
+            </div>
+
+            <!-- Top Right -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5 transition-colors duration-300 group-hover:border-[#555]">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                1 month
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Period measured
+              </span>
+            </div>
+
+            <!-- Bottom Left -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-r border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5 transition-colors duration-300 group-hover:border-[#555]">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                CrossFit
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Studio type
+              </span>
+            </div>
+
+            <!-- Bottom Right -->
+            <div class="p-3 sm:p-4 md:p-5 flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                2025
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Year
+              </span>
+            </div>
+          </div>
+        </a>
+
+
+        <!-- Card -->
+        <a href="#" class="group flex flex-col bg-black cursor-pointer transition-all duration-300">
+          <!-- Image Area -->
+          <div class="w-full overflow-hidden bg-[#212121]">
+            <img src="assets/images/fitness-project03.png" alt="Form Studio Pilates"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          </div>
+
+          <!-- Description -->
+          <div
+            class="bg-[#212121] p-3 sm:p-4 md:p-5 flex flex-col justify-start mt-1 transition-colors duration-300 group-hover:bg-[#2b2b2b]">
+            <h3
+              class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mb-4 transition-colors duration-300 group-hover:text-light-green">
+              Form Studio Pilates
+            </h3>
+
+            <p
+              class="text-[#A7A7A7] text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans transition-colors duration-300 group-hover:text-white/80">
+              Booked solid 5 weeks out within 90 days. Premium pricing accepted.
+            </p>
+          </div>
+
+          <!-- Metrics -->
+          <div
+            class="grid grid-cols-2 bg-black border border-[#333] font-bogle font-normal mt-1 transition-colors duration-300 group-hover:border-[#555]">
+            <!-- Top Left -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-r border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5 transition-colors duration-300 group-hover:border-[#555]">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                5 weeks
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Booked solid
+              </span>
+            </div>
+
+            <!-- Top Right -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5 transition-colors duration-300 group-hover:border-[#555]">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                90 days
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Time period
+              </span>
+            </div>
+
+            <!-- Bottom Left -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-r border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5 transition-colors duration-300 group-hover:border-[#555]">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                Pilates
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Studio type
+              </span>
+            </div>
+
+            <!-- Bottom Right -->
+            <div class="p-3 sm:p-4 md:p-5 flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                2025
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Year
+              </span>
+            </div>
+          </div>
+        </a>
+
+
+        <!-- Card -->
+        <a href="#" class="group flex flex-col bg-black cursor-pointer transition-all duration-300">
+          <!-- Image Area -->
+          <div class="w-full overflow-hidden bg-[#212121]">
+            <img src="assets/images/fitness-project04.png" alt="Bridge BJJ Academy"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+          </div>
+
+          <!-- Description -->
+          <div
+            class="bg-[#212121] p-3 sm:p-4 md:p-5 flex flex-col justify-start mt-1 transition-colors duration-300 group-hover:bg-[#2b2b2b]">
+            <h3
+              class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase mb-4 transition-colors duration-300 group-hover:text-light-green">
+              Bridge BJJ Academy
+            </h3>
+
+            <p
+              class="text-[#A7A7A7] text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans transition-colors duration-300 group-hover:text-white/80">
+              Kids program waitlist created. Adult intro classes 3x baseline.
+            </p>
+          </div>
+
+          <!-- Metrics -->
+          <div
+            class="grid grid-cols-2 bg-black border border-[#333] font-bogle font-normal mt-1 transition-colors duration-300 group-hover:border-[#555]">
+            <!-- Top Left -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-r border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5 transition-colors duration-300 group-hover:border-[#555]">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                Waitlist
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Kids program
+              </span>
+            </div>
+
+            <!-- Top Right -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5 transition-colors duration-300 group-hover:border-[#555]">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                3X
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Adult intro
+              </span>
+            </div>
+
+            <!-- Bottom Left -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-r border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5 transition-colors duration-300 group-hover:border-[#555]">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                Martial Arts
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Studio type
+              </span>
+            </div>
+
+            <!-- Bottom Right -->
+            <div class="p-3 sm:p-4 md:p-5 flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span
+                class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-white">
+                2025
+              </span>
+              <span
+                class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%] transition-colors duration-300 group-hover:text-white/80">
+                Year
+              </span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Recent Fitness Projects Section -->
+
+  <!-- divider animation -->
+  <section class="fitness-energy-divider bg-black overflow-hidden">
+    <div class="container">
+      <div class="flex justify-between gap-10 md:gap-50 lg:gap-100">
+        <!-- energy beam -->
+        <div class="fitness-energy-beam"></div>
+        <div class="fitness-energy-core"></div>
+        <!-- Left -->
+        <div class="left  flex shrink-0">
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+        </div>
+
+        <!-- Right -->
+        <div class="right flex shrink-0 lg:-mr-25">
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- divider animation -->
+
+  <!-- Platform + Integrations Section -->
+  <section class="bg-black text-white section-padding selection:bg-light-green selection:text-black overflow-hidden">
+    <div class="container">
+
+      <!-- Section Header  -->
+      <div class="section-heading text-center font-bogle max-w-184 mx-auto">
+        <h2
+          class="text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[100%] text-white  font-bogle mb-3 md:mb-6">
+          Platform + integrations
+        </h2>
+        <p
+          class="text-[#A7A7A7] text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans">
+          Every feature on this list exists because we've seen it move the needle on intro-offer claims and member
+          retention. Nothing here is decoration.
+        </p>
+      </div>
+
+      <!-- Comparison Table Structure -->
+      <div class="w-full overflow-x-auto  my-6 sm:my-10 md:my-16">
+
+        <table class="min-w-200 w-full border border-[#333] border-collapse">
+
+          <!-- Header -->
+          <thead>
+            <tr class="bg-light-green/13">
+
+              <th
+                class="px-4 py-3 text-left text-light-green font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] border-b border-r border-[#333]">
+                Feature
+              </th>
+
+              <th
+                class="px-4 py-3 text-left text-light-green font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] border-b border-r border-[#333]">
+                Wordpress
+              </th>
+
+              <th
+                class="px-4 py-3 text-left text-light-green font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] border-b border-r border-[#333]">
+                Webflow
+              </th>
+
+              <th
+                class="px-4 py-3 text-left text-light-green font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] border-b border-[#333]">
+                Framer
+              </th>
+
+            </tr>
+          </thead>
+
+
+          <tbody>
+
+
+            <!-- Row 1 -->
+            <tr class="group hover:bg-white/5 transition-colors">
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                Best for
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                Multi-studio, SEO-heavy
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                Boutique, visual-first
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-[#333] group-hover:text-white">
+                Brand-new studio, $0 budget
+              </td>
+
+            </tr>
+
+
+            <!-- Row 2 -->
+            <tr class="group hover:bg-white/5 transition-colors">
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                SEO control
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                Full
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                Strong
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-[#333] group-hover:text-white">
+                None — template-trapped
+              </td>
+
+            </tr>
+
+
+            <!-- Row 3 -->
+            <tr class="group hover:bg-white/5 transition-colors">
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                Branding control
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                Full
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                Full
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-[#333] group-hover:text-white">
+                Logo only
+              </td>
+
+            </tr>
+
+
+            <!-- Row 4 -->
+            <tr class="group hover:bg-white/5 transition-colors">
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                Schedule integration
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                Any platform
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                Any platform
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-[#333] group-hover:text-white">
+                Mindbody only
+              </td>
+
+            </tr>
+
+
+            <!-- Row 5 -->
+            <tr class="group hover:bg-white/5 transition-colors">
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                Monthly cost
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                $15–35
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-r border-[#333] group-hover:text-white">
+                $23–39
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-b border-[#333] group-hover:text-white">
+                $0 (included with Mindbody)
+              </td>
+
+            </tr>
+
+
+            <!-- Row 6 -->
+            <tr class="group hover:bg-white/5 transition-colors">
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-r border-[#333] group-hover:text-white">
+                Ownership
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-r border-[#333] group-hover:text-white">
+                You own everything
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] border-r border-[#333] group-hover:text-white">
+                You own everything
+              </td>
+
+              <td
+                class="px-4 py-3 font-stacksans text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[130%] group-hover:text-white">
+                Locked to Mindbody
+              </td>
+
+            </tr>
+
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <!-- Integrations Badges Section -->
+      <div class="text-center">
+        <h3 class="text-white font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase">
+          Integrations Built Into Every Package
+        </h3>
+
+        <!-- Badges Wrapper Flex Grid -->
+        <div class="flex flex-wrap justify-center gap-2 md:gap-3 items-center  font-stacksans mt-3 md:mt-6">
+
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            Mindbody
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            ClassPass
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            Zen Planner
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            Wodify
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            Glofox
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            Pike13
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            Acuity
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            Trainerize
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            MyFitnessPal
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            Google Business Profile
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            Instagram feed
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            Stripe
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            Square
+          </span>
+          <span
+            class="md:px-6 px-4 py-2 md:py-3 bg-[#212121] border border-[#212121] hover:border-light-green text-[#A7A7A7] hover:text-light-green text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-[110%] md:leading-[130%] select-none transition-colors duration-300">
+            Mailchimp / Klaviyo
+          </span>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Platform + Integrations Section -->
+
+  <!-- Honest Comparison Section -->
+  <section
+    class="relative bg-black text-white section-padding selection:bg-light-green selection:text-black overflow-hidden">
+
+    <div class="absolute inset-0 z-0">
+      <img src="assets/images/fitness-comparison-banner.webp" alt="People doing planks in a fitness studio"
+        class="w-full h-full object-cover object-center" />
+      <!-- dark overlay -->
+      <div class="absolute inset-0 bg-black/24"></div>
+    </div>
+
+    <div class="relative container z-10">
+
+      <!-- Section Header  -->
+      <div class="section-heading text-center font-bogle ">
+        <h2
+          class="text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[100%] text-light-green  font-bogle mb-3 md:mb-6">
+          Honest comparison
+        </h2>
+        <p
+          class="text-white text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans max-w-184 mx-auto">
+          Three honest paths. Each fits a different studio. Here's the math, no spin.
+        </p>
+      </div>
+
+      <!-- 3-Column Plan Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6 items-stretch mt-6 sm:mt-10 md:mt-16">
+
+        <!-- Card 1 -->
+        <div class="flex flex-col bg-black/95 backdrop-blur-sm p-6 md:p-8 justify-between font-bogle font-normal">
+          <div>
+            <!-- Badge Header -->
+            <span
+              class="inline-block bg-[#212121] text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[110%] px-3 py-2 mb-3 md:mb-4">
+              MINDBODY FREE SITE
+            </span>
+
+            <!-- Pricing Title -->
+            <h3 class="text-white text-lg md:text-2xl lg:text-[32px] leading-[110%] mb-2 md:mb-4">
+              Free with your $159/month subscription
+            </h3>
+
+            <!-- Plan Subtext -->
+            <p
+              class="text-[#A7A7A7] font-stacksans text-sm sm:text-base font-normal leading-[120%] md:leading-[130%] mb-3 sm:mb-5 md:mb-8">
+              Template-trapped, generic, ranks for nothing. Locked to Mindbody — leave the platform, lose the site.
+            </p>
+          </div>
+
+          <!-- Integrated Info Grid -->
+          <div class="grid grid-cols-2 bg-black border border-[#333] font-bogle font-normal mt-1">
+
+            <!-- Top Left -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-r border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3">
+                60–90 days
+              </span>
+              <span class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%]">
+                Time to launch
+              </span>
+            </div>
+
+            <!-- Top Right -->
+            <div class="p-3 sm:p-4 md:p-5 border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3">
+                Full
+              </span>
+              <span class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%]">
+                SEO control
+              </span>
+            </div>
+
+            <!-- Bottom Left -->
+            <div class="p-3 sm:p-4 md:p-5 border-r border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3">
+                Often locked
+              </span>
+              <span class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%]">
+                Ownership
+              </span>
+            </div>
+
+            <!-- Bottom Right -->
+            <div class="p-3 sm:p-4 md:p-5 flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3">
+                No
+              </span>
+              <span class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%]">
+                Support
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <!-- Card 2 -->
+        <div
+          class="flex flex-col bg-[linear-gradient(180deg,#151F00_0%,#000_100%)] p-6 md:p-8 justify-between font-bogle font-normal border-x-2 border-t-2 border-b-0 [border-image:linear-gradient(to_bottom,#B2FF00_0%,transparent_100%)_1]">
+          <div>
+            <!-- Badge Header -->
+            <span
+              class="inline-block bg-light-green text-black text-sm sm:text-base md:text-lg leading-[110%] px-3 py-2 mb-3 md:mb-4">
+              Most popular for studios
+            </span>
+
+            <!-- Pricing Title -->
+            <h3 class="text-white text-lg md:text-2xl lg:text-[32px] leading-[110%] mb-2 md:mb-4">
+              Pixxen $999 Pack
+            </h3>
+
+            <!-- Plan Subtext -->
+            <p
+              class="text-[#A7A7A7] font-stacksans text-sm sm:text-base font-normal leading-[120%] md:leading-[130%] mb-3 sm:mb-5 md:mb-8">
+              Full custom site, owned by you, ranks in Google for real local fitness searches. Integrates with Mindbody,
+              ClassPass, Zen Planner, Glofox, Wodify.
+            </p>
+          </div>
+
+          <!-- Integrated Info Grid -->
+          <div class="grid grid-cols-2 bg-black border border-[#333] font-bogle font-normal mt-1">
+
+            <!-- Top Left -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-r border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3">
+                14 days
+              </span>
+              <span class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%]">
+                Time to launch
+              </span>
+            </div>
+
+            <!-- Top Right -->
+            <div class="p-3 sm:p-4 md:p-5 border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3">
+                Full
+              </span>
+              <span class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%]">
+                SEO control
+              </span>
+            </div>
+
+            <!-- Bottom Left -->
+            <div class="p-3 sm:p-4 md:p-5 border-r border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3">
+                yours
+              </span>
+              <span class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%]">
+                Ownership
+              </span>
+            </div>
+
+            <!-- Bottom Right -->
+            <div class="p-3 sm:p-4 md:p-5 flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3">
+                yes
+              </span>
+              <span class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%]">
+                Support
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="flex flex-col bg-black/95 backdrop-blur-sm p-6 md:p-8 justify-between font-bogle font-normal">
+          <div>
+            <!-- Badge Header -->
+            <span
+              class="inline-block bg-[#212121] text-[#A7A7A7] text-sm sm:text-base md:text-lg leading-[110%] px-3 py-2 mb-3 md:mb-4">
+              Full-service agency
+            </span>
+
+            <!-- Pricing Title -->
+            <h3 class="text-white text-lg md:text-2xl lg:text-[32px] leading-[110%] mb-2 md:mb-4">
+              $6K–18K upfront + monthly retainer
+            </h3>
+
+            <!-- Plan Subtext -->
+            <p
+              class="text-[#A7A7A7] font-stacksans text-sm sm:text-base font-normal leading-[120%] md:leading-[130%] mb-3 sm:mb-5 md:mb-8">
+              Real branded site, ongoing content and PPC, dedicated account manager. Worth it for multi-location chains
+              spending $5K+/month on marketing.
+            </p>
+          </div>
+
+          <!-- Integrated Info Grid -->
+          <div class="grid grid-cols-2 bg-black border border-[#333] font-bogle font-normal mt-1">
+
+            <!-- Top Left -->
+            <div
+              class="p-3 sm:p-4 md:p-5 border-r border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3">
+                60–90 days
+              </span>
+              <span class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%]">
+                Time to launch
+              </span>
+            </div>
+
+            <!-- Top Right -->
+            <div class="p-3 sm:p-4 md:p-5 border-b border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3">
+                Full
+              </span>
+              <span class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%]">
+                SEO control
+              </span>
+            </div>
+
+            <!-- Bottom Left -->
+            <div class="p-3 sm:p-4 md:p-5 border-r border-[#333] flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3">
+                Often locked
+              </span>
+              <span class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%]">
+                Ownership
+              </span>
+            </div>
+
+            <!-- Bottom Right -->
+            <div class="p-3 sm:p-4 md:p-5 flex flex-col justify-between min-h-20 sm:min-h-22.5">
+              <span class="block text-base sm:text-lg leading-[110%] mb-2 sm:mb-3">
+                No
+              </span>
+              <span class="block font-stacksans text-xs sm:text-sm text-[#A7A7A7] leading-[130%]">
+                Support
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Honest Comparison Section -->
+
+  <!-- Realistic timeline Timeline Section  -->
+  <section class="bg-black text-white section-padding common-paragraph selection:bg-light-green selection:text-black">
+    <div class="container">
+
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-8 lg:gap-16 xl:gap-8 items-start">
+
+
+        <!-- Left Column: Heading & Content -->
+        <div class="xl:col-span-6 flex flex-col items-center xl:items-start space-y-4 xl:sticky xl:top-20">
+
+          <h2
+            class="text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[120%] text-white font-bogle text-center xl:text-left uppercase">
+
+            Realistic timeline
+
+          </h2>
+
+
+          <p
+            class="text-[#A7A7A7] text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans text-center xl:text-left max-w-187.5">
+
+            Most fitness marketing agencies take 60–90 days for the same scope. We don't, because the package is
+            productized — same caliber of work, less margin per project, faster turnaround.
+
+          </p>
+
+        </div>
+
+
+
+
+        <!-- Right Column: Process Steps List -->
+        <div class="xl:col-span-6 space-y-5 md:space-y-8">
+
+
+          <!-- Step 1 -->
+          <div class="flex items-start space-x-3 sm:space-x-6">
+
+            <div class="shrink-0 bg-light-green/12 flex items-center justify-center"
+              style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);">
+
+              <span
+                class="font-bogle text-light-green text-lg md:text-2xl lg:text-[32px] font-normal leading-[100%] py-4 sm:py-6 px-6 sm:px-8 md:py-8.5 md:px-12">
+                1
+              </span>
+
+            </div>
+
+
+            <div class="space-y-1.5 md:space-y-3">
+
+              <h3 class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase">
+                Launch
+              </h3>
+
+              <p
+                class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+
+                Site live, GBP optimized. Direct traffic and Instagram referrals convert better immediately.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex items-start space-x-3 sm:space-x-6">
+
+            <div class="shrink-0 bg-light-green/12 flex items-center justify-center"
+              style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);">
+
+              <span
+                class="font-bogle text-light-green text-lg md:text-2xl lg:text-[32px] font-normal leading-[100%] py-4 sm:py-6 px-6 sm:px-8 md:py-8.5 md:px-12">
+                2
+              </span>
+
+            </div>
+
+
+            <div class="space-y-1.5 md:space-y-3">
+
+              <h3 class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase">
+                First impressions
+              </h3>
+
+              <p
+                class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+
+                Google indexes pages. GBP starts surfacing for 'yoga near me' and 'gym near me.' First 5–15 intro
+                claims.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex items-start space-x-3 sm:space-x-6">
+
+            <div class="shrink-0 bg-light-green/12 flex items-center justify-center"
+              style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);">
+
+              <span
+                class="font-bogle text-light-green text-lg md:text-2xl lg:text-[32px] font-normal leading-[100%] py-4 sm:py-6 px-6 sm:px-8 md:py-8.5 md:px-12">
+                3
+              </span>
+
+            </div>
+
+
+            <div class="space-y-1.5 md:space-y-3">
+
+              <h3 class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase">
+                First real lift
+              </h3>
+
+              <p
+                class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+
+                Long-tail class queries rank ('hot yoga [neighborhood],' 'beginner pilates [city]'). Local 3-pack
+                inclusion.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Step 4 -->
+          <div class="flex items-start space-x-3 sm:space-x-6">
+
+            <div class="shrink-0 bg-light-green/12 flex items-center justify-center"
+              style="clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);">
+
+              <span
+                class="font-bogle text-light-green text-lg md:text-2xl lg:text-[32px] font-normal leading-[100%] py-4 sm:py-6 px-6 sm:px-8 md:py-8.5 md:px-12">
+                4
+              </span>
+
+            </div>
+
+
+            <div class="space-y-1.5 md:space-y-3">
+
+              <h3 class="font-bogle text-lg md:text-2xl lg:text-[32px] font-normal leading-[110%] uppercase">
+                Compounding
+              </h3>
+
+              <p
+                class="text-[#A7A7A7] font-stacksans text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%]">
+
+                Class pages ranking for primary keywords. Intro claims 2–4x baseline. Class density grows.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Realistic timeline Timeline Section  -->
+
+  <!-- divider animation -->
+  <section class="fitness-energy-divider bg-black overflow-hidden">
+    <div class="container">
+      <div class="flex justify-between gap-10 md:gap-50 lg:gap-100">
+        <!-- energy beam -->
+        <div class="fitness-energy-beam"></div>
+        <div class="fitness-energy-core"></div>
+        <!-- Left -->
+        <div class="left  flex shrink-0">
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+        </div>
+
+        <!-- Right -->
+        <div class="right flex shrink-0 lg:-mr-25">
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+          <span class="block -ml-1 lg:-ml-3">
+            <svg class="w-8 sm:w-14 lg:w-21.5 h-auto" viewBox="0 0 86 126" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0606 0H86L59.9394 126H0L26.0606 0Z" fill="#212121" />
+            </svg>
+          </span>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- divider animation -->
+
+  <!-- FAQ section start -->
+  <section class="bg-black section-padding home-comparison-faq section-padding">
+    <div class="container mx-auto">
+
+      <!-- Section Heading -->
+      <div class="section-heading text-center font-bogle sm:mb-12 mb-8 md:mb-16">
+        <h2
+          class="text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[100%] text-white font-bogle mb-3 md:mb-6">
+          Frequently asked questions
+        </h2>
+        <p
+          class="text-white text-sm sm:text-base md:text-lg font-normal leading-[120%] md:leading-[130%] font-stacksans max-w-184 mx-auto">
+          Three honest paths. Each fits a different studio. Here's the math, no spin.
+        </p>
+      </div>
+
+      <!-- FAQ Grid Wrap — JS splits into 2 columns -->
+      <div class="faqGridWrap">
+
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-trigger w-full flex items-center gap-4 sm:gap-6 sm:py-6 py-4 md:py-7 text-left">
+            <span class="cmp-faq-q">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="50" viewBox="0 0 64 50" fill="none">
+                <path d="M13.3908 0L64 0L50.4123 50H0L13.3908 0Z" fill="#B2FF00" fill-opacity="0.12" />
+              </svg>
+              <span class="cmp-faq-q-letter">Q</span>
+            </span>
+            <h3 class="cmp-faq-title flex-1 cursor-pointer">Is the $999 price really all-in?</h3>
+            <span class="icon-close text-white/60 text-2xl leading-none shrink-0">+</span>
+          </button>
+          <div class="faq-border hidden"></div>
+          <div class="faq-content overflow-hidden" style="max-height:0;">
+            <p class="cmp-faq-answer pb-6 sm:pb-7 sm:pl-[88px] pl-[52px]">Yes. The $999 covers everything — design,
+              build, logo, branding, SEO content, and GMB optimization. No hidden fees, no monthly retainer, no
+              surprises.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-trigger w-full flex items-center gap-4 sm:gap-6 sm:py-6 py-4 md:py-7 text-left">
+            <span class="cmp-faq-q">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="50" viewBox="0 0 64 50" fill="none">
+                <path d="M13.3908 0L64 0L50.4123 50H0L13.3908 0Z" fill="#B2FF00" fill-opacity="0.12" />
+              </svg>
+              <span class="cmp-faq-q-letter">Q</span>
+            </span>
+            <h3 class="cmp-faq-title flex-1 cursor-pointer">Do you integrate with Mindbody / ClassPass / Zen Planner /
+              Glofox / Wodify?</h3>
+            <span class="icon-close text-white/60 text-2xl leading-none shrink-0">+</span>
+          </button>
+          <div class="faq-border hidden"></div>
+          <div class="faq-content overflow-hidden" style="max-height:0;">
+            <p class="cmp-faq-answer pb-6 sm:pb-7 sm:pl-[88px] pl-[52px]">Yes. We can connect your site to Mindbody,
+              ClassPass, Zen Planner, Glofox, Wodify, and other studio management tools. Just let us know during
+              onboarding and we'll set it up.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-trigger w-full flex items-center gap-4 sm:gap-6 sm:py-6 py-4 md:py-7 text-left">
+            <span class="cmp-faq-q">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="50" viewBox="0 0 64 50" fill="none">
+                <path d="M13.3908 0L64 0L50.4123 50H0L13.3908 0Z" fill="#B2FF00" fill-opacity="0.12" />
+              </svg>
+              <span class="cmp-faq-q-letter">Q</span>
+            </span>
+            <h3 class="cmp-faq-title flex-1 cursor-pointer">Do you do ongoing SEO or content writing after launch?</h3>
+            <span class="icon-close text-white/60 text-2xl leading-none shrink-0">+</span>
+          </button>
+          <div class="faq-border hidden"></div>
+          <div class="faq-content overflow-hidden" style="max-height:0;">
+            <p class="cmp-faq-answer pb-6 sm:pb-7 sm:pl-[88px] pl-[52px]">We offer affordable monthly care plans that
+              include ongoing SEO, blog content, and site updates. Or you can manage it yourself — the site is built to
+              be easy to edit.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-trigger w-full flex items-center gap-4 sm:gap-6 sm:py-6 py-4 md:py-7 text-left">
+            <span class="cmp-faq-q">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="50" viewBox="0 0 64 50" fill="none">
+                <path d="M13.3908 0L64 0L50.4123 50H0L13.3908 0Z" fill="#B2FF00" fill-opacity="0.12" />
+              </svg>
+              <span class="cmp-faq-q-letter">Q</span>
+            </span>
+            <h3 class="cmp-faq-title flex-1 cursor-pointer">Can you build a multi-location studio site?</h3>
+            <span class="icon-close text-white/60 text-2xl leading-none shrink-0">+</span>
+          </button>
+          <div class="faq-border hidden"></div>
+          <div class="faq-content overflow-hidden" style="max-height:0;">
+            <p class="cmp-faq-answer pb-6 sm:pb-7 sm:pl-[88px] pl-[52px]">Absolutely. We build location pages for each
+              studio, with individual schedules, staff, and local SEO targeting for every city you operate in.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-trigger w-full flex items-center gap-4 sm:gap-6 sm:py-6 py-4 md:py-7 text-left">
+            <span class="cmp-faq-q">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="50" viewBox="0 0 64 50" fill="none">
+                <path d="M13.3908 0L64 0L50.4123 50H0L13.3908 0Z" fill="#B2FF00" fill-opacity="0.12" />
+              </svg>
+              <span class="cmp-faq-q-letter">Q</span>
+            </span>
+            <h3 class="cmp-faq-title flex-1 cursor-pointer">Can the site handle on-demand or virtual class libraries?
+            </h3>
+            <span class="icon-close text-white/60 text-2xl leading-none shrink-0">+</span>
+          </button>
+          <div class="faq-border hidden"></div>
+          <div class="faq-content overflow-hidden" style="max-height:0;">
+            <p class="cmp-faq-answer pb-6 sm:pb-7 sm:pl-[88px] pl-[52px]">Yes. We can build a gated video library for
+              on-demand and livestream classes, with member logins and simple category filtering.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <button class="faq-trigger w-full flex items-center gap-4 sm:gap-6 sm:py-6 py-4 md:py-7 text-left">
+            <span class="cmp-faq-q">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="50" viewBox="0 0 64 50" fill="none">
+                <path d="M13.3908 0L64 0L50.4123 50H0L13.3908 0Z" fill="#B2FF00" fill-opacity="0.12" />
+              </svg>
+              <span class="cmp-faq-q-letter">Q</span>
+            </span>
+            <h3 class="cmp-faq-title flex-1 cursor-pointer">Will my studio rank #1 for 'yoga [my city]'?</h3>
+            <span class="icon-close text-white/60 text-2xl leading-none shrink-0">+</span>
+          </button>
+          <div class="faq-border hidden"></div>
+          <div class="faq-content overflow-hidden" style="max-height:0;">
+            <p class="cmp-faq-answer pb-6 sm:pb-7 sm:pl-[88px] pl-[52px]">No one can honestly guarantee #1. What we
+              guarantee is that your site launches with local SEO, schema, and location pages in place — most clients
+              see ranking movement within 30–60 days.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="faq-item">
+          <button class="faq-trigger w-full flex items-center gap-4 sm:gap-6 sm:py-6 py-4 md:py-7 text-left">
+            <span class="cmp-faq-q">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="50" viewBox="0 0 64 50" fill="none">
+                <path d="M13.3908 0L64 0L50.4123 50H0L13.3908 0Z" fill="#B2FF00" fill-opacity="0.12" />
+              </svg>
+              <span class="cmp-faq-q-letter">Q</span>
+            </span>
+            <h3 class="cmp-faq-title flex-1 cursor-pointer">What if I already have a Mindbody free site or a Squarespace
+              site?</h3>
+            <span class="icon-close text-white/60 text-2xl leading-none shrink-0">+</span>
+          </button>
+          <div class="faq-border hidden"></div>
+          <div class="faq-content overflow-hidden" style="max-height:0;">
+            <p class="cmp-faq-answer pb-6 sm:pb-7 sm:pl-[88px] pl-[52px]">That's fine — we migrate your content and
+              schedule over, connect your existing booking system, and point your domain to the new site. No downtime.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="faq-item">
+          <button class="faq-trigger w-full flex items-center gap-4 sm:gap-6 sm:py-6 py-4 md:py-7 text-left">
+            <span class="cmp-faq-q">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="50" viewBox="0 0 64 50" fill="none">
+                <path d="M13.3908 0L64 0L50.4123 50H0L13.3908 0Z" fill="#B2FF00" fill-opacity="0.12" />
+              </svg>
+              <span class="cmp-faq-q-letter">Q</span>
+            </span>
+            <h3 class="cmp-faq-title flex-1 cursor-pointer">How do you handle transformation photos and FTC compliance?
+            </h3>
+            <span class="icon-close text-white/60 text-2xl leading-none shrink-0">+</span>
+          </button>
+          <div class="faq-border hidden"></div>
+          <div class="faq-content overflow-hidden" style="max-height:0;">
+            <p class="cmp-faq-answer pb-6 sm:pb-7 sm:pl-[88px] pl-[52px]">We include proper results-disclaimer language
+              and consent-based photo usage so before/after content stays compliant with FTC testimonial guidelines.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 9 -->
+        <div class="faq-item">
+          <button class="faq-trigger w-full flex items-center gap-4 sm:gap-6 sm:py-6 py-4 md:py-7 text-left">
+            <span class="cmp-faq-q">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="50" viewBox="0 0 64 50" fill="none">
+                <path d="M13.3908 0L64 0L50.4123 50H0L13.3908 0Z" fill="#B2FF00" fill-opacity="0.12" />
+              </svg>
+              <span class="cmp-faq-q-letter">Q</span>
+            </span>
+            <h3 class="cmp-faq-title flex-1 cursor-pointer">What happens after the 30-day support window ends?</h3>
+            <span class="icon-close text-white/60 text-2xl leading-none shrink-0">+</span>
+          </button>
+          <div class="faq-border hidden"></div>
+          <div class="faq-content overflow-hidden" style="max-height:0;">
+            <p class="cmp-faq-answer pb-6 sm:pb-7 sm:pl-[88px] pl-[52px]">Your site keeps running exactly as launched.
+              If you want ongoing edits, SEO, or new features after that, you can move to one of our monthly care plans
+              anytime.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 10 -->
+        <div class="faq-item">
+          <button class="faq-trigger w-full flex items-center gap-4 sm:gap-6 sm:py-6 py-4 md:py-7 text-left">
+            <span class="cmp-faq-q">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="50" viewBox="0 0 64 50" fill="none">
+                <path d="M13.3908 0L64 0L50.4123 50H0L13.3908 0Z" fill="#B2FF00" fill-opacity="0.12" />
+              </svg>
+              <span class="cmp-faq-q-letter">Q</span>
+            </span>
+            <h3 class="cmp-faq-title flex-1 cursor-pointer">How does this compare to Glofox or Mindbody's marketing
+              services?</h3>
+            <span class="icon-close text-white/60 text-2xl leading-none shrink-0">+</span>
+          </button>
+          <div class="faq-border hidden"></div>
+          <div class="faq-content overflow-hidden" style="max-height:0;">
+            <p class="cmp-faq-answer pb-6 sm:pb-7 sm:pl-[88px] pl-[52px]">Those tools give you a template inside their
+              platform. We build a fully owned, custom site with real SEO — no monthly platform lock-in.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- FAQ section end -->
+
+  <!-- Big image section -->
+  <section class="relative overflow-hidden h-auto lg:min-h-[800px]">
+
+    <!-- Fixed Image only on desktop -->
+    <div class="relative lg:fixed lg:inset-0 lg:-z-10">
+
+      <img src="assets/images/fitness-women-pullups.png" alt="Fitness women doing pullups"
+        class="w-full h-auto object-contain object-center lg:w-full lg:h-full lg:object-cover" />
+
+    </div>
+
+
+    <!-- Section Content -->
+    <div class="relative z-10">
+      <!-- Your section content -->
+    </div>
+
+  </section>
+
+  <!-- Big image section -->
+
+  <!-- cta section start -->
+  <section
+    class="cta-section relative section-padding bg-dark overflow-hidden font-bogle common-paragraph selection:bg-light-green selection:text-black">
+    <img src="assets/images/shape-top.png"
+      class="img-fluid absolute top-0 left-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+      alt="" />
+    <img src="assets/images/shape-right.png"
+      class="img-fluid absolute bottom-0 right-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+      alt="" />
+
+    <div class="container">
+      <div class="cta-wrap z-80 relative">
+        <div class="max-w-238.5 mx-auto w-full">
+          <h2
+            class="text-center font-bogle text-white text-lg sm:text-xl md:text-2xl lg:text-[40px] xl:text-[64px] font-normal leading-[110%] md:leading-[120%] mb-4 md:mb-6">
+            Fill your intro offer & class schedule
+          </h2>
+          <p
+            class="text-[#A7A7A7] font-stacksans font-normal text-sm sm:text-base md:text-lg leading-[120%] md:leading-[130%] text-center mb-4 md:mb-8">
+            Book a free 15-minute call. We'll review your current site, audit your top three competitors who outrank
+            you, name the three biggest leaks costing you intro-offer claims right now, and tell you honestly whether
+            the Pixxen Fitness Pack fits — or whether you need something bigger.
+          </p>
+
+          <!-- Button -->
+          <div class="w-full flex justify-center font-anton">
+            <a href="contact.html"
+              class="inline-flex items-center justify-center px-8 py-3 sm:px-12 sm:py-5 mega-reveal-btn relative overflow-hidden bg-light-green font-normal leading-[100%] transition-colors uppercase [clip-path:polygon(8%_0%,100%_0%,93%_100%,0%_100%)]">
+              <div class="text-mask h-6 sm:h-7 overflow-hidden flex flex-col">
+                <span class="t-up text-base sm:text-xl md:text-2xl font-normal text-black">
+                  Book a free 15-min call
+                </span>
+                <span class="t-down text-base sm:text-xl md:text-2xl font-normal text-black">
+                  Book a free 15-min call
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- cta section end -->
+
+  <!-- footer section start -->
+  <footer class="relative">
+    <div class="bg-dark text-white border-t border-b border-dark2">
+      <div class="container">
+        <!-- Desktop Grid Layout -->
+        <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
+          <div
+            class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-dark2">
+            <div class="grid md:grid-cols-4 grid-cols-2 xl:gap-8 gap-4">
+              <!-- Services Column -->
+              <div class="">
+                <h3 class="text-white text-base sm:text-lg font-semibold mb-3 lg:mb-6">
+                  Services
+                </h3>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li>
+                    <a href="mobile-app-design.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">MOBILE
+                      APP DESIGN</a>
+                  </li>
+                  <li>
+                    <a href="dashboard-design.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">DASHBOARD
+                      DESIGN</a>
+                  </li>
+                  <li>
+                    <a href="website-design.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">WEBSITE
+                      DESIGN</a>
+                  </li>
+                  <li>
+                    <a href="web-application-design.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">WEB
+                      APP
+                      DESIGN</a>
+                  </li>
+                  <li>
+                    <a href="saas-design.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">SAAS
+                      DESIGN</a>
+                  </li>
+                  <li>
+                    <a href="branding-design.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">BRANDING</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Pixxen Column -->
+              <div class="">
+                <h3 class="text-white text-base sm:text-lg font-semibold mb-3 lg:mb-6">
+                  Pixxen
+                </h3>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li>
+                    <a href="about.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">ABOUT</a>
+                  </li>
+                  <li>
+                    <a href="contact.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">CONTACT</a>
+                  </li>
+                  <li>
+                    <a href="career.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">CAREER</a>
+                  </li>
+                  <li>
+                    <a href="team.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">TEAM</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Resources Column -->
+              <div class="">
+                <h3 class="text-white text-base sm:text-lg font-semibold mb-3 lg:mb-6">
+                  Resources
+                </h3>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li>
+                    <a href="case-study.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">CASE
+                      STUDIES</a>
+                  </li>
+                  <li>
+                    <a href="blog.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">BLOGS</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Legal Column -->
+              <div class="">
+                <h3 class="text-white text-base sm:text-lg font-semibold mb-3 lg:mb-6">
+                  Legal
+                </h3>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li>
+                    <a href="terms.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">TERMS</a>
+                  </li>
+                  <li>
+                    <a href="privacy.html"
+                      class="text-white hover:text-light-green transition-colors text-[12px] sm:text-sm lg:text-base">PRIVACY</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Copyright -->
+            <div class="mt-8 lg:mt-0 pt-6 lg:pt-0 border-t border-dark2 lg:border-0 md:block hidden">
+              <p class="text-white text-sm text-center lg:text-left">
+                © 2026 PIXXEN
+              </p>
+            </div>
+          </div>
+
+          <!-- Newsletter Column -->
+          <div
+            class="md:pl-10 lg:pl-14 md:border-l border-dark2 lg:col-span-4 md:col-span-5 md:py-12 sm:py-8 py-6 flex flex-col justify-between gap-5">
+            <div>
+              <h3 class="text-white md:text-lg text-base font-semibold md:mb-3 mb-2 lg:mb-4">
+                Join 5,000+ design lovers.
+              </h3>
+              <p class="text-white sm:text-sm text-[12px] mb-4 lg:mb-6">
+                Monthly design insights, case studies, and inspiration
+                straight to your inbox.
+              </p>
+
+              <!-- Email Input -->
+              <div class="relative mb-3 md:mb-8 lg:mb-12">
+                <input type="email" placeholder="Email address"
+                  class="w-full bg-transparent border border-dark2 rounded-2xl px-4 py-5 lg:py-3.5 h-16 text-white placeholder:text-white focus:outline-none focus:border-soft-green transition-colors text-sm lg:text-base pr-14" />
+                <button
+                  class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-dark2 hover:bg-light-green p-3.75 rounded-r-2xl transition-colors">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.5628 14.6665L14.4108 7.51452L16.2964 5.62891L26.6673 15.9999L16.2964 26.3707L14.4108 24.4851L21.5628 17.3332H5.33398V14.6665H21.5628Z"
+                      fill="#fff" class="group-hover:fill-white transition-colors" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex md:justify-start justify-center md:gap-2 gap-1 lg:gap-2">
+              <a href="#"
+                class="bg-dark2 hover:bg-light-green p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"
+                    fill="white" />
+                </svg>
+              </a>
+              <a href="#"
+                class="bg-dark2 hover:bg-light-green p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.5 11C8.60457 11 9.5 10.1046 9.5 9C9.5 7.89543 8.60457 7 7.5 7H3V11H7.5ZM8.5 13H3V17H8.5C9.60457 17 10.5 16.1046 10.5 15C10.5 13.8954 9.60457 13 8.5 13ZM10.5632 11.5725C11.7239 12.2726 12.5 13.5457 12.5 15C12.5 17.2091 10.7091 19 8.5 19H1V5H7.5C9.70914 5 11.5 6.79086 11.5 9C11.5 9.97964 11.1478 10.877 10.5632 11.5725ZM15.5 6H21V7.5H15.5V6ZM23 14.5H15.5V14.75C15.5 16.2688 16.7312 17.5 18.25 17.5C19.3187 17.5 20.245 16.8904 20.7001 16H22.8338C22.2851 18.0169 20.4407 19.5 18.25 19.5C15.6266 19.5 13.5 17.3734 13.5 14.75V13.25C13.5 10.6266 15.6266 8.5 18.25 8.5C20.8734 8.5 23 10.6266 23 13.25V14.5ZM20.8965 12.5C20.57 11.3457 19.5088 10.5 18.25 10.5C16.9912 10.5 15.93 11.3457 15.6035 12.5H20.8965Z"
+                    fill="white" />
+                </svg>
+              </a>
+              <a href="#"
+                class="bg-dark2 hover:bg-light-green p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z"
+                    fill="white" />
+                </svg>
+              </a>
+              <a href="#"
+                class="bg-dark2 hover:bg-light-green p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 9.55005C12.9171 8.61327 14.1111 8 15.5 8C18.5375 8 21 10.4624 21 13.5V21H19V13.5C19 11.567 17.433 10 15.5 10C13.567 10 12 11.567 12 13.5V21H10V8.5H12V9.55005ZM5 6.5C4.17157 6.5 3.5 5.82843 3.5 5C3.5 4.17157 4.17157 3.5 5 3.5C5.82842 3.5 6.5 4.17157 6.5 5C6.5 5.82843 5.82842 6.5 5 6.5ZM4 8.5H6V21H4V8.5Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+            <!-- Copyright -->
+            <div class="mt-1 flex justify-center md:hidden">
+              <p class="text-white text-sm text-center lg:text-left">
+                © 2026 PIXXEN
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-linear-to-b from-dark to-light-green sticky -z-10 bottom-0 left-0 w-full flex justify-center items-end">
+      <div class="flex justify-center text-center">
+        <img src="assets/images/pixxen-footerlogo.png" class="img-fluid w-full object-contain" alt="footerlogo" />
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js">
+  </script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
