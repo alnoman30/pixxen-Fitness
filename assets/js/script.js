@@ -792,33 +792,9 @@ function initFAQ(section) {
     });
   });
 }
- 
-function initFAQGrid(section) {
-  const wrap = section.querySelector('.faqGridWrap');
-  if (!wrap) return;
- 
-  const items = Array.from(wrap.querySelectorAll('.faq-item'));
-  if (items.length === 0) return;
- 
-  const leftCol  = document.createElement('div');
-  const rightCol = document.createElement('div');
-  leftCol.className  = 'flex flex-col w-full md:w-1/2';
-  rightCol.className = 'flex flex-col w-full md:w-1/2';
- 
-  items.forEach((item, i) => {
-    if (i % 2 === 0) leftCol.appendChild(item);
-    else             rightCol.appendChild(item);
-  });
- 
-  wrap.innerHTML = '';
-  wrap.className = 'faqGridWrap flex flex-col md:flex-row md:gap-16 items-start';
-  wrap.appendChild(leftCol);
-  wrap.appendChild(rightCol);
-}
- 
+
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.home-comparison-faq').forEach(section => {
-    initFAQGrid(section);
     initFAQ(section);
   });
 });
